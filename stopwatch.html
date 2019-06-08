@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+      <html>
+        <head>
+          <meta content="text/html; charset=utf-8" http-equiv="content-type">
+          <title>Stopwatch</title>
+          <meta content="Neil Hatfield" name="author">
+          <meta content="Functioning Stopwatch" name="description">
+          <meta content="BlueGriffon wysiwyg editor" name="generator">
+          <style>
+      .adjustfont1{font-size:120px; font-family:ariel;}
+      .adjustfont2{font-size: 80px; font-family:ariel;}
+    </style>
+        </head>
+        <body> <br>
+          <br>
+          <script src="1_Scripts/stopwatch.js" type="text/javascript"></script>
+          <div style="text-align: center;"> <span id="watchdisplay" class="adjustfont1">00:00:00</span><br>
+            &nbsp;<input onclick="w.start()" class="adjustfont2" value="Start" type="button"><input
+onclick="w.stop()"
+class="adjustfont2"
+value="Stop"
+type="button"><input
+onclick="w.reset();w.onTick()"
+class="adjustfont2"
+value="Reset"
+type="button"></div>
+    <script type="text/javascript">// 
+   function updatedisplay(watch) {
+document.getElementById('watchdisplay').innerHTML = watch.toString();
+}
+var w = new Stopwatch(updatedisplay, 50);
+</script>
+</body></html>

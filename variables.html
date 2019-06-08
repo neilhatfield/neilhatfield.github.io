@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+                  <html>
+                    <head>
+                      <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+                      <title>variables</title>
+                      <script type="text/javascript" src="1_Scripts/functionUp.js"></script>
+                      <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script> <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script> <style>
+    p {
+      font-family: "Times New Roman";
+      font-size: 25px;
+    }
+    h1 {
+      font-family: "Times New Roman";
+      font-size: 60px;
+      text-align: center;
+      font-weight: bolder;
+    }
+    h2 {
+      font-family: "Times New Roman";
+      font-size: 30px;
+      text-align: left;
+      font-weight: bold;
+    }
+    h3 {
+      font-family: "Times New Roman";
+      font-size: 30px;
+      text-align: left;
+      font-weight: normal;
+    }
+    h4 {
+      font-family: "Times New Roman";
+      font-size: 30px;
+      text-align: left;
+      font-weight: normal;
+    }
+    
+    
+    </style>
+                    </head>
+                    <body>
+                      <div>
+                        <h1> Reminder</h1>
+                        <p class="jumbo"><span>When we talk about functions, we
+                            are describing a relationship between two
+                            quantities. At least one of those quantities <span
+                              style="font-style: italic;">varies</span>.</span></p>
+                        <section>
+                          <table style="width: 1200px;" border="0">
+                            <tbody>
+                              <tr>
+                                <td><br>
+                                </td>
+                                <td colspan="4">
+                                  <h4>Exact Accumulation <span style="font-weight: bold;">Function</span></h4>
+                                </td>
+                                <td style="width:10px;"><br>
+                                </td>
+                                <td colspan="4">
+                                  <h4>Exact Rate of Change <span style="font-weight: bold;">Function</span></h4>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                </td>
+                                <td colspan="4">
+                                  <h3>$P(x)=x^7-5x^4-10x^3+9$</h3>
+                                </td>
+                                <td <br=""><br>
+                                </td>
+                                <td style="height: 93.2667px;" colspan="4">
+                                  <h3>$r_P(x)=7x^6-20x^3-30x^2$</h3>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10px;"><br>
+                                </td>
+                                <td style="width: 25px;">
+                                  <h3>&nbsp;<span style="font-style: italic;">P</span>(</h3>
+                                </td>
+                                <td style="text-align: center; vertical-align: middle; width: 38px;"
+                                  text-align="center">
+                                  <h3 style="text-align: center;" id="targetElement1">$x$</h3>
+                                </td>
+                                <td style="width: 5px;">
+                                  <h3>)=</h3>
+                                </td>
+                                <td>
+                                  <h3 id="targetElement2">$x^7-5x^4-10x^3+9$</h3>
+                                </td>
+                                <td <br=""><br>
+                                </td>
+                                <td style="width: 25px;">
+                                  <h3>&nbsp;<span style="font-style: italic;">$r_P$</span>(</h3>
+                                </td>
+                                <td style="text-align: center; vertical-align: middle; width: 38px;"
+                                  text-align="center">
+                                  <h3 style="text-align: center;" id="targetElement3">$x$</h3>
+                                </td>
+                                <td style="width: 5px;">
+                                  <h3>)=</h3>
+                                </td>
+                                <td>
+                                  <h3 id="targetElement4">$7x^6-20x^3-30x^2$</h3>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><br>
+                                </td>
+                                <td colspan="4">
+                                  <form>
+                                    <h2>&nbsp;&nbsp;&nbsp; Controls for $f$:</h2>
+                                    &nbsp;&nbsp;&nbsp; <input value="Initialize"
+onclick="Initializef()"
+class="inlineLeft marginLeft marginRight"
+style="width:120px;"
+type="button"><input
+value="Start/Resume"
+onclick="Startf()"
+class="inlineLeft marginLeft marginRight"
+style="width:120px;"
+type="button">
+                  <input value="Stop" onclick="Stopf()" class="inlineLeft marginRight"
+style="width:80px;"
+type="button">
+                  <input value="Reset" onclick="Resetf()" class="inlineLeft marginRight"
+style="width:80px;"
+type="button">
+                </form>
+              </td>
+              <td style="width:10px;"><br>
+              </td>
+              <td colspan="4">
+                <form>
+                  <h2>&nbsp;&nbsp;&nbsp; Controls for $g$:</h2>
+                  &nbsp;&nbsp;&nbsp; <input value="Initialize" onclick="Initializeg()"
+class="inlineLeft marginLeft marginRight"
+style="width:120px;"
+type="button"><input
+value="Start/Resume"
+onclick="Startg()"
+class="inlineLeft marginLeft marginRight"
+style="width:120px;"
+type="button">
+                  <input value="Stop" onclick="Stopg()" class="inlineLeft marginRight"
+style="width:80px;"
+type="button">
+                  <input value="Reset" onclick="Resetg()" class="inlineLeft marginRight"
+style="width:80px;"
+type="button">
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </section>
+      <form>
+        <h2 style="text-align: center;">&nbsp;&nbsp;&nbsp; Master Controls:</h2>
+        <div style="text-align: center;"> &nbsp;&nbsp;&nbsp; <input value="Initialize"
+onclick="Initialize()"
+class="inlineLeft marginLeft marginRight"
+style="width:120px;"
+type="button"><input
+value="Start/Resume"
+onclick="Start()"
+class="inlineLeft marginLeft marginRight"
+style="width:120px;"
+type="button"><input
+value="Stop"
+onclick="Stop()"
+class="inlineLeft marginRight"
+style="width:80px;"
+type="button"><input
+value="Reset"
+onclick="Reset()"
+class="inlineLeft marginRight"
+style="width:80px;"
+type="button"></div>
+      </form>
+    </div>
+    <script type="text/javascript">
+      var options = {
+        useEasing : true, // toggle easing
+        useGrouping : true, // 1,000,000 vs 1000000
+        separator : ',', // character to use as a separator
+        decimal : '.', // character to use as a decimal
+        }
+      var useOnComplete = false;
+      var useEasing = true;
+      var useGrouping = true;
+
+      var counter1, counter2, counter3, counter4;
+      
+      window.onload = function(){
+        counter1 = new functionUp('targetElement1',-10,10,4,240,'identity',options);
+        counter2 = new functionUp('targetElement2',-10,10,4,240,'main',options);
+        counter3 = new functionUp('targetElement3',-10,10,4,240,'identity',options);
+        counter4 = new functionUp('targetElement4',-10,10,4,240,'derivative',options);
+      }
+        
+      function Initializef() { counter1.initialize(); counter2.initialize(); }
+      function Startf() { counter1.start(); counter2.start(); }
+      function Stopf(){ counter1.stop(); counter2.stop(); }
+      function Resetf() { counter1.reset(); counter2.reset(); }
+      
+      function Initializeg() { counter3.initialize(); counter4.initialize(); }
+      function Startg() { counter3.start(); counter4.start(); }
+      function Stopg(){ counter3.stop(); counter4.stop(); }
+      function Resetg() { counter3.reset(); counter4.reset(); }
+      
+      function Initialize() { counter1.initialize(); counter2.initialize(); counter3.initialize(); counter4.initialize();}
+      function Start() { counter1.start(); counter2.start(); counter3.start(); counter4.start(); }
+      function Stop(){ counter1.stop(); counter2.stop(); counter3.stop(); counter4.stop(); }
+      function Reset() { counter1.reset(); counter2.reset(); counter3.reset(); counter4.reset(); }
+      
+    </script>
+</body></html>
