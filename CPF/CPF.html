@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>CPF Calculator</title>
+    <!--    CDNs to jQuery and MathJax and JSXGraph and GeoGebra-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="js/jsxgraphcore.js"></script>
+    <script type="text/javascript" src="https://www.geogebratube.org/scripts/deployggb.js"></script>
+    <!--    Now bring in JS files for handling distributions -->
+    <script src="js/math.js"></script>
+    <script src="js/jstat.min.js"></script>
+    <script src="js/distributions.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Link Style Sheet   -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jsxgraph.css">
+  </head>
+  <body>
+    <div id="#wrapper">
+      <div id="header">
+        <h1>CPF Calculator</h1>
+        <p id="description"> This page provides a probability calculator for
+          various distribution types. Start by selecting the desired
+          distribution type from the select menu below, then enter appropriate
+          values into the table and press "Compute Probability" to get the
+          corresponding probability value. </p>
+        <p id="attributions"> This page was coded by <a href="https://mathpost.asu.edu/%7Egksander"
+            target="_blank">Grant
+            Sander</a>. Mathematical content written by <a href="https://mathpost.asu.edu/%7Eneil/"
+            target="_blank">Neil
+            Hatfield</a>. Built upon <a href="http://jstat.github.io/" target="_blank">jStat</a>,
+          <a href="https://www.mathjax.org/" target="_blank">MathJax</a> and <a
+            href="http://geogebra.org"
+            target="_blank">GeoGebra</a>.
+        </p>
+        <div id="select-container"> <span id="select-label">Distribution type:
+          </span>
+          <select id="dist-select">
+            <script type="text/javascript">
+                        writeOptions();
+                    </script>
+          </select>
+        </div>
+      </div>
+      <div id="distr-description">
+        <p id="distr-title"></p>
+        <p></p>
+      </div>
+      <div id="container">
+        <!-- This table is going to hold input boxes. JS will generate this -->
+        <table id="inputTable" border="1" cellpadding="2">
+        </table>
+        <hr> <br>
+        <div id="outputContainer">
+          <p id="outputLabel"></p>
+          <p id="output"></p>
+        </div>
+        <div id="plot_wrapper">
+          <div id="plotter" style="width:400px; height:385px; display:block"></div>
+          <p id="plot_notes" style="text-align:center;"></p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+  </body>
+</html>
