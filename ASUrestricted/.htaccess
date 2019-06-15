@@ -1,0 +1,5 @@
+AuthUserFile /home/neil/public_html/ASUrestricted/.htpasswd
+AuthName "Restricted to Authorized Users Only"
+AuthType Basic
+
+require valid-user
