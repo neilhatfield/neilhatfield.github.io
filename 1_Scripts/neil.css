@@ -97,7 +97,7 @@ body {
 
 #header #nav {
 	clear:both;
-	color:url(../1_Images/nav.png) top repeat-x #009CDE;
+	background:url(../1_Images/nav.png) top repeat-x #009CDE;
 	border-bottom:2px solid #009CDE;
 	border-top:2px solid #009CDE;
 	border-left:2px solid #009CDE;
