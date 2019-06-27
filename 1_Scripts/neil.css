@@ -97,7 +97,7 @@ body {
 
 #header #nav {
 	clear:both;
-	background:url(../1_Images/nav.png) top repeat-x #009CDE;
+	color: #009CDE;
 	border-bottom:2px solid #009CDE;
 	border-top:2px solid #009CDE;
 	border-left:2px solid #009CDE;
@@ -176,7 +176,7 @@ body {
 
 #sidebar h2 {
 	font:160% Arial;
-	color:#990066;
+	color:#001E44;
 	margin:10px 0 10px 0;
 	border:none;
 }
@@ -327,7 +327,7 @@ h2 a:hover {
 	color:#001E44;
 }
 h3 {
-    color:#414141;
+    color:#001E44;
     }
 
 h4 {
