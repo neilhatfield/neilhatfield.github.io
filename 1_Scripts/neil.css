@@ -46,7 +46,7 @@ body {
 }
 
 #header input:focus {
-	border:2px solid #FFC627;
+	border:2px solid #009CDE;
 	color:#555;
 }
 
@@ -63,7 +63,7 @@ body {
 #header h1 {
 	float:center;
 	font:350% Georgia;
-	color:#8C1D40;
+	color:#001E44;
 	padding:5px 20px 5px 5px;
 	
 	margin:0 20px 0 0;
@@ -97,11 +97,11 @@ body {
 
 #header #nav {
 	clear:both;
-	background:url(../1_Images/nav.png) top repeat-x #FFC627;
-	border-bottom:2px solid #FFC627;
-	border-top:2px solid #FFC627;
-	border-left:2px solid #FFC627;
-	border-right:2px solid #FFC627;
+	background:url(../1_Images/nav.png) top repeat-x #009CDE;
+	border-bottom:2px solid #009CDE;
+	border-top:2px solid #009CDE;
+	border-left:2px solid #009CDE;
+	border-right:2px solid #009CDE;
 	padding:10px 10px 10px 0 !important;
 	padding:4px 10px 10px 0;
 }
@@ -112,18 +112,18 @@ body {
 }
 
 #header #nav a {
-	color:#8C1D40;
+	color:#001E44;
 	font:125% Trebuchet MS;
 	text-decoration:none;
 	padding:10px;
 }
 
 #header #nav a:hover {
-	background:#FFE5B3;
+	background:#96BEE6;
 }
 
 #header #nav a.active {
-	background:#FFE5B3;
+	background:#96BEE6;
 }
 
 #header #nav li {
@@ -133,13 +133,13 @@ body {
 }
 
 #header #subnav {
-	background:#FFE5B3;
+	background:#96BEE6;
 	padding:5px 7px 7px 7px;
 	font:90% Verdana;
-	color:#8C1D40;
-	border-bottom:2px solid #FFE5B3;
-	border-left:2px solid #FFE5B3;
-	border-right:2px solid #FFE5B3;
+	color:#001E44;
+	border-bottom:2px solid #96BEE6;
+	border-left:2px solid #96BEE6;
+	border-right:2px solid #96BEE6;
 }
 
 #header #subnav li {
@@ -148,21 +148,21 @@ body {
 }
 
 #header #subnav a {
-	color:#8C1D40;
+	color:#001E44;
 	text-decoration:none;
 	font:100% Verdana;
 	padding:5px;
-	border-bottom:2px solid #FFE5B3;
+	border-bottom:2px solid #96BEE6;
 }
 
 #header #subnav a:hover {
-	border-bottom:2px solid #8C1D40;
-	color:#8C1D40;
+	border-bottom:2px solid #001E44;
+	color:#001E44;
 }
 
 #header #subnav a.active {
-	border-bottom:2px solid #8C1D40;
-	color:#8C1D40;
+	border-bottom:2px solid #001E44;
+	color:#001E44;
 }
 
 
@@ -182,7 +182,7 @@ body {
 }
 
 #sidebar h3 {
-	color:#FFC627;
+	color:#009CDE;
 	font:100% Verdana;
 	font-weight:bold;
 	letter-spacing:1px;
@@ -198,7 +198,7 @@ body {
 }
 
 #sidebar p.news a.more {
-	color:#FFC627;
+	color:#009CDE;
 	display:block;
 	text-align:right;
 	font:80% Verdana;
@@ -209,7 +209,7 @@ body {
 }
 
 #sidebar p.news a:hover {
-	color:#8C1D40;
+	color:#001E44;
 }
 
 #sidebar .subnav {
@@ -314,17 +314,17 @@ p {
 
 h2 {
 	font:190% Arial;
-	color:#8C1D40;
-	border-bottom:2px solid #FFC627;
+	color:#001E44;
+	border-bottom:2px solid #009CDE;
 }
 
 h2 a {
-	color:#8C1D40;
+	color:#001E44;
 	text-decoration:none;
 }
 
 h2 a:hover {
-	color:#8C1D40;
+	color:#001E44;
 }
 h3 {
     color:#414141;
@@ -332,7 +332,7 @@ h3 {
 
 h4 {
     font:190% Arial;
-    color:#8C1D40;
+    color:#001E44;
 }
 
 #footer {
@@ -362,7 +362,7 @@ h3 {
 	padding:15px 0 15px 15px;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:#8C1D40;
+	color:#001E44;
 }
 #content ul span {
 	color:#444;
@@ -373,7 +373,7 @@ h3 {
 	padding:15px 0;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:#8C1D40;
+	color:#001E44;
 }
 #contentnorightbar ul span {
 	color:#444;
@@ -384,7 +384,7 @@ h3 {
 	padding:15px 0 15px 15px;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:#8C1D40;
+	color:#001E44;
 }
 #contentnobars ul span {
 	color:#444;
@@ -392,7 +392,7 @@ h3 {
 img {
 	padding:1px;
 	background:#FFF;
-	border:2px solid #8C1D40;
+	border:2px solid #001E44;
 }
 
 form {
@@ -403,25 +403,25 @@ form {
 label {
 	display:block;
 	font-weight:bold;
-	color:#8C1D40;
+	color:#001E44;
 	margin:5px 0;
 
 }
 input {
 	width:300px;
 	padding:4px;
-    background:#8C1D40;
+    background:#001E44;
 	border:none;
-	border-bottom:1px dotted #8C1D40;
+	border-bottom:1px dotted #001E44;
 	font:120% Verdana;
-	color:#FFC627;
+	color:#009CDE;
 }
 
 textarea {
 	width:400px;
 	padding:4px;
 	font:120% Verdana;
-	border:1px solid #FFC627;
+	border:1px solid #009CDE;
 	height:200px;
 	display:block;
 	color:#000000;
@@ -440,11 +440,11 @@ blockquote p {
 }
 .bodylinks {
 FONT-WEIGHT: bold;
-COLOR: #8C1D40;
+COLOR: #001E44;
 TEXT-DECORATION: underline;
 }
 .coloredlinks{
-COLOR: #8C1D40;
+COLOR: #001E44;
 }
 .noborder{
 border:none;
