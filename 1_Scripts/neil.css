@@ -78,37 +78,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: 400;
 }
 
-#header h1 {
-	font-size:3.5rem;
-	color: var(--nttany-navy);
-	padding:5px 20px 5px 5px;
-	margin:0 20px 0 0;
-}
-
 #header h1 a {
 	color:#333;
 	text-decoration:none;
-	
 }
 
 #header h1 a:hover {
 	color:#111;
-	
 }
-
-#header h2 {
-	font-size: 1.5rem;
-	color:#555;
-	padding:14px 0 0 0;
-	border:none;
-}
-
-#header h2 a {
-	color:#555;
-	text-decoration:none;
-	border-bottom:2px solid #f6f6f6;
-}
-
 
 #header #nav {
 	clear:both;
@@ -117,8 +94,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	border-top:2px solid var(--pennsylvania-sky);
 	border-left:2px solid var(--pennsylvania-sky);
 	border-right:2px solid var(--pennsylvania-sky);
-	padding:10px 10px 10px 0 !important;
-	padding:4px 10px 10px 0;
+	padding:10px 10px 10px 0;
 }
 
 #header a em {
@@ -127,7 +103,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 #header #nav a {
-	color:var(--nttany-navy);
+	color:var(--nittany-navy);
 	font-size: 1.25rem;
 	text-decoration:none;
 	padding:10px;
@@ -151,7 +127,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	background:var(--pugh-blue);
 	padding:5px 7px 7px 7px;
 	font-size: 0.9rem ;
-	color:var(--nttany-navy);
+	color:var(--nittany-navy);
 	border-bottom:2px solid var(--pugh-blue);
 	border-left:2px solid var(--pugh-blue);
 	border-right:2px solid var(--pugh-blue);
@@ -163,20 +139,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 #header #subnav a {
-	color:var(--nttany-navy);
+	color:var(--nittany-navy);
 	text-decoration:none;
 	padding:5px;
 	border-bottom:2px solid var(--pugh-blue);
 }
 
 #header #subnav a:hover {
-	border-bottom:2px solid var(--nttany-navy);
-	color:var(--nttany-navy);
+	border-bottom:2px solid var(--nittany-navy);
+	color:var(--nittany-navy);
 }
 
 #header #subnav a.active {
-	border-bottom:2px solid var(--nttany-navy);
-	color:var(--nttany-navy);
+	border-bottom:2px solid var(--nittany-navy);
+	color:var(--nittany-navy);
 }
 
 #content {
@@ -199,29 +175,34 @@ p {
 	line-height:22px;
 }
 
+h1 {
+	font-size: 3.5rem;
+	color: var(--nittany-navy);
+}
+
 h2 {
 	font-size:1.9rem;
-	color:var(--nttany-navy);
+	color:var(--nittany-navy);
 	border-bottom:2px solid var(--pennsylvania-sky);
 }
 
 h2 a {
-	color:var(--nttany-navy);
+	color:var(--nittany-navy);
 	text-decoration:none;
 }
 
 h2 a:hover {
-	color:var(--nttany-navy);
+	color:var(--nittany-navy);
 }
 h3 {
 	font-size:1.4rem;
 	margin:10px 0;
-    color:var(--nttany-navy);
+    color:var(--nittany-navy);
     }
 
 h4 {
     /*font:190% Arial;*/
-    color:var(--nttany-navy);
+    color:var(--nittany-navy);
 }
 
 #footer {
@@ -246,7 +227,7 @@ a:hover {
 	padding:15px 0 15px 15px;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:var(--nttany-navy);
+	/*color: var(--nittany-navy);*/
 }
 #content ul span {
 	color:#444;
@@ -257,7 +238,7 @@ a:hover {
 	padding:15px 0;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:var(--nttany-navy);
+	/*color:var(--nittany-navy);*/
 }
 #contentnorightbar ul span {
 	color:#444;
@@ -268,7 +249,7 @@ a:hover {
 	padding:15px 0 15px 15px;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:var(--nttany-navy);
+	/*color:var(--nittany-navy);*/
 }
 #contentnobars ul span {
 	color:#444;
@@ -276,7 +257,7 @@ a:hover {
 img {
 	padding:1px;
 	background:#FFF;
-	border:2px solid var(--nttany-navy);
+	border:2px solid var(--nittany-navy);
 }
 
 form {
@@ -287,16 +268,16 @@ form {
 label {
 	display:block;
 	font-weight:bold;
-	color:var(--nttany-navy);
+	color:var(--nittany-navy);
 	margin:5px 0;
 
 }
 input {
 	width:300px;
 	padding:4px;
-    background:var(--nttany-navy);
+    background:var(--nittany-navy);
 	border:none;
-	border-bottom:1px dotted var(--nttany-navy);
+	border-bottom:1px dotted var(--nittany-navy);
 	font:1.2rem;
 	color:var(--pennsylvania-sky);
 }
@@ -324,11 +305,11 @@ blockquote p {
 }
 .bodylinks {
 FONT-WEIGHT: bold;
-COLOR: var(--nttany-navy);
+COLOR: var(--nittany-navy);
 TEXT-DECORATION: underline;
 }
 .coloredlinks{
-COLOR: var(--nttany-navy);
+COLOR: var(--nittany-navy);
 }
 .noborder{
 border:none;
