@@ -1,16 +1,21 @@
-/*
-Color Choices
-Nittany Navy: #001E44
-Pennsylvania Sky: #009CDE
-Pugh Blue: #96BEE6
-Don't forget to update 1_Images/nav.png
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-*/
+:root {
+	--nittany-navy: 	#001E44;
+	--beaver-blue: 		#1E407C;
+	--pennsylvania-sky:	#009CDE;
+	--pugh-blue: 		#96BEE6;
+}
+
+html {
+	font-size: 1rem;
+}
 
 body {
-	font: 100% "Lucida Grande", "Lucida Sans Unicode", verdana, geneva, sans-serif;
-	word-spacing:2px;
-	color:#444;
+	font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Segoe UI Symbol";
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
 	margin:20px;
 	background:url(../1_Images/body.jpg) #f6f6f6;
 }
@@ -46,7 +51,7 @@ body {
 	padding:5px;
 	background:#fff;
 	border:2px solid #f6f6f6;
-	font:150% Arial;
+	font:1.5rem;
 	color:#999;
 }
 
@@ -55,7 +60,7 @@ body {
 }
 
 #header input:focus {
-	border:2px solid #009CDE;
+	border:2px solid var(--pennsylvania-sky);
 	color:#555;
 }
 
@@ -71,8 +76,8 @@ body {
 
 #header h1 {
 	float:center;
-	font:350% Georgia;
-	color:#001E44;
+	font:3.5rem;
+	color:var(--nttany-navy);
 	padding:5px 20px 5px 5px;
 	
 	margin:0 20px 0 0;
@@ -90,7 +95,7 @@ body {
 }
 
 #header h2 {
-	font:150% Georgia;
+	font:1.5rem;
 	font-weight:normal;
 	color:#555;
 	padding:14px 0 0 0;
@@ -106,11 +111,11 @@ body {
 
 #header #nav {
 	clear:both;
-	background:url(../1_Images/nav.png) top repeat-x #009CDE;
-	border-bottom:2px solid #009CDE;
-	border-top:2px solid #009CDE;
-	border-left:2px solid #009CDE;
-	border-right:2px solid #009CDE;
+	background:url(../1_Images/nav.png) top repeat-x var(--pennsylvania-sky);
+	border-bottom:2px solid var(--pennsylvania-sky);
+	border-top:2px solid var(--pennsylvania-sky);
+	border-left:2px solid var(--pennsylvania-sky);
+	border-right:2px solid var(--pennsylvania-sky);
 	padding:10px 10px 10px 0 !important;
 	padding:4px 10px 10px 0;
 }
@@ -121,18 +126,18 @@ body {
 }
 
 #header #nav a {
-	color:#001E44;
-	font:125% Trebuchet MS;
+	color:var(--nttany-navy);
+	font:1.25rem Trebuchet MS;
 	text-decoration:none;
 	padding:10px;
 }
 
 #header #nav a:hover {
-	background:#96BEE6;
+	background:var(--pugh-blue);
 }
 
 #header #nav a.active {
-	background:#96BEE6;
+	background:var(--pugh-blue);
 }
 
 #header #nav li {
@@ -142,13 +147,13 @@ body {
 }
 
 #header #subnav {
-	background:#96BEE6;
+	background:var(--pugh-blue);
 	padding:5px 7px 7px 7px;
-	font:90% Verdana;
-	color:#001E44;
-	border-bottom:2px solid #96BEE6;
-	border-left:2px solid #96BEE6;
-	border-right:2px solid #96BEE6;
+	font:0.9rem ;
+	color:var(--nttany-navy);
+	border-bottom:2px solid var(--pugh-blue);
+	border-left:2px solid var(--pugh-blue);
+	border-right:2px solid var(--pugh-blue);
 }
 
 #header #subnav li {
@@ -157,21 +162,20 @@ body {
 }
 
 #header #subnav a {
-	color:#001E44;
+	color:var(--nttany-navy);
 	text-decoration:none;
-	font:100% Verdana;
 	padding:5px;
-	border-bottom:2px solid #96BEE6;
+	border-bottom:2px solid var(--pugh-blue);
 }
 
 #header #subnav a:hover {
-	border-bottom:2px solid #001E44;
-	color:#001E44;
+	border-bottom:2px solid var(--nttany-navy);
+	color:var(--nttany-navy);
 }
 
 #header #subnav a.active {
-	border-bottom:2px solid #001E44;
-	color:#001E44;
+	border-bottom:2px solid var(--nttany-navy);
+	color:var(--nttany-navy);
 }
 
 
@@ -184,15 +188,14 @@ body {
 }
 
 #sidebar h2 {
-	font:160% Arial;
-	color:#001E44;
+	font:1.6rem;
+	color:var(--nttany-navy);
 	margin:10px 0 10px 0;
 	border:none;
 }
 
 #sidebar h3 {
-	color:#009CDE;
-	font:100% Verdana;
+	color:var(--pennsylvania-sky);
 	font-weight:bold;
 	letter-spacing:1px;
 	margin:0 0 -10px 0;
@@ -207,10 +210,10 @@ body {
 }
 
 #sidebar p.news a.more {
-	color:#009CDE;
+	color:var(--pennsylvania-sky);
 	display:block;
 	text-align:right;
-	font:80% Verdana;
+	font:0.8rem;
 	text-transform:uppercase;
 	letter-spacing:1px;
 	text-decoration:none;
@@ -218,7 +221,7 @@ body {
 }
 
 #sidebar p.news a:hover {
-	color:#001E44;
+	color:var(--nttany-navy);
 }
 
 #sidebar .subnav {
@@ -256,7 +259,7 @@ body {
 	background:#f6f6f6;
 	border:1px solid #ccc;
 	color:#777;
-	font:90% Verdana;
+	font:0.9rem;
 	width:190px;
 }
 
@@ -275,7 +278,7 @@ body {
 }
 
 #sidebarright h2 {
-	font:140% Arial;
+	font:1.4rem;
 	color:#333;
 	margin:10px 0;
 	border:none;
@@ -283,7 +286,7 @@ body {
 
 #sidebarright ul {
 	margin:10px 0 10px 15px;
-	font:90% Verdana;
+	font:0.9rem;
 }
 
 #sidebarright ul li {
@@ -316,32 +319,32 @@ body {
 }
 
 p {
-	font:125% Veranda;
+	font:1.25rem;
     margin:15px 0;
 	line-height:22px;
 }
 
 h2 {
-	font:190% Arial;
-	color:#001E44;
-	border-bottom:2px solid #009CDE;
+	font:1.9rem;
+	color:var(--nttany-navy);
+	border-bottom:2px solid var(--pennsylvania-sky);
 }
 
 h2 a {
-	color:#001E44;
+	color:var(--nttany-navy);
 	text-decoration:none;
 }
 
 h2 a:hover {
-	color:#001E44;
+	color:var(--nttany-navy);
 }
 h3 {
-    color:#001E44;
+    color:var(--nttany-navy);
     }
 
 h4 {
     /*font:190% Arial;*/
-    color:#001E44;
+    color:var(--nttany-navy);
 }
 
 #footer {
@@ -361,7 +364,7 @@ a:hover {
 }
 
 h3 {
-	font:140% Trebuchet MS;
+	font:1.4rem;
 	margin:10px 0;
 }
 
@@ -371,7 +374,7 @@ h3 {
 	padding:15px 0 15px 15px;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:#001E44;
+	color:var(--nttany-navy);
 }
 #content ul span {
 	color:#444;
@@ -382,7 +385,7 @@ h3 {
 	padding:15px 0;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:#001E44;
+	color:var(--nttany-navy);
 }
 #contentnorightbar ul span {
 	color:#444;
@@ -393,7 +396,7 @@ h3 {
 	padding:15px 0 15px 15px;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
-	color:#001E44;
+	color:var(--nttany-navy);
 }
 #contentnobars ul span {
 	color:#444;
@@ -401,7 +404,7 @@ h3 {
 img {
 	padding:1px;
 	background:#FFF;
-	border:2px solid #001E44;
+	border:2px solid var(--nttany-navy);
 }
 
 form {
@@ -412,25 +415,25 @@ form {
 label {
 	display:block;
 	font-weight:bold;
-	color:#001E44;
+	color:var(--nttany-navy);
 	margin:5px 0;
 
 }
 input {
 	width:300px;
 	padding:4px;
-    background:#001E44;
+    background:var(--nttany-navy);
 	border:none;
-	border-bottom:1px dotted #001E44;
-	font:120% Verdana;
-	color:#009CDE;
+	border-bottom:1px dotted var(--nttany-navy);
+	font:1.2rem;
+	color:var(--pennsylvania-sky);
 }
 
 textarea {
 	width:400px;
 	padding:4px;
-	font:120% Verdana;
-	border:1px solid #009CDE;
+	font:1.2rem;
+	border:1px solid var(--pennsylvania-sky);
 	height:200px;
 	display:block;
 	color:#000000;
@@ -442,18 +445,18 @@ p img {
 }
 
 blockquote p {
-	font:160% Georgia;
+	font:1.6rem;
 	color:#aaa;
 	padding:0 10% 0 0;
 	line-height:30px;
 }
 .bodylinks {
 FONT-WEIGHT: bold;
-COLOR: #001E44;
+COLOR: var(--nttany-navy);
 TEXT-DECORATION: underline;
 }
 .coloredlinks{
-COLOR: #001E44;
+COLOR: var(--nttany-navy);
 }
 .noborder{
 border:none;
