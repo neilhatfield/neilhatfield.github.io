@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <title>Syllabus-STAT 461</title>
+    <link media="screen,projection" type="text/css" href="1_Scripts/neil.css" rel="stylesheet" />
+    <meta name="author" content="Neil Hatfield" />
+    <meta name="keywords" content="Neil Hatfield" />
+    <!--- The below script is from https://alligator.io/css/collapsible/ --->
+    <script>
+        let myLabels = document.querySelectorAll('.lbl-toggle');
+
+        Array.from(myLabels).forEach(label => {
+            label.addEventListener('keydown', e => {
+                // 32 === spacebar
+                // 13 === enter
+                if (e.which === 32 || e.which === 13) {
+                    e.preventDefault();
+                    label.click();
+                };
+            });
+        });
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="innerwrapper">
+            <div id="header">
+                <h1 style="text-align: center;">Syllabus (Course FAQ) for Stat 461</h1>
+                <br/>
+                <ul id="nav">
+                    <li>Return to Neil's Webpage: </li>
+                    <li><a href="index.html"><em>About Me</em></a></li>
+                    <li><a href="scholarlywork.html"><em>Scholarly Work</em></a></li>
+                    <li><a href="teaching.html"><em>Teaching</em></a></li>
+                    <li><a href="linkscontact.html"><em>Links/Contact</em></a></li>
+                </ul>
+            </div>
+            <div id="contentnobars">
+                <p><em>This Syllabus (Course FAQ) Page covers two sections of STAT 461: Analysis of Variance.</em></p>
+                <br />
+                <h2>Frequently Asked Questions</h2>
+                <p>This page serves as a collection of the most common and most important Course Questions to help you succeed. Be sure to look through the various sections. I will keep this page as up-to-date as possible.</p>
+                <p>Date of Last Update: 1/4/2020</p>
+                <h2>Key Course Information</h2>
+                <div class="wrap-collabsible">
+                    <input id="faq1" class="toggle" type="checkbox">
+                    <label for="faq1" class="lbl-toggle" tabindex="0">When and Where do we meet?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <h3>Section 1</h3>
+                            <p>Time: 11:15am to 12:05pm
+                                <br /> Place: Mondays and Fridays will be in 107 Wartik Lab; Wednesdays will be in 112 Boucke Building</p>
+                            <h3>Section 3</h3>
+                            <p>Time: Tuesdays and Thursdays, 1:35pm to 2:25pm; Fridays 1:25pm to 2:15pm
+                                <br /> Place: Tuesdays and Thursdays will be in 106 Wartik Lab; Fridays will be in 112 Boucke Building</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq2" class="toggle" type="checkbox">
+                    <label for="faq2" class="lbl-toggle" tabindex="0">What's this course about?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Stat 461 is the Analysis of Variance is a course focused on making use of the Analysis of Variance toolkit. This toolkit allows you to not only design experiments, but to analyze data from those experiments as well as observational data to make informed decisions for statistical research questions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq3" class="toggle" type="checkbox">
+                    <label for="faq3" class="lbl-toggle" tabindex="0">Is there a course website?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>We will be using Canvas as our course website.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq4" class="toggle" type="checkbox">
+                    <label for="faq4" class="lbl-toggle" tabindex="0">How is the course structured?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>The class will be a mix of discussion and group work. While I will screen/audio record and post a video for each class, class attendance is essential for your success. Discussion is an important part of your learning. During class, I expect you to be prepared and will call on you to explain your thinking.</p>
+                            <p>I'm a big believer in asking questions to get you thinking and I'm okay with uncomfortable silences as they give people time to think and respond. When you ask a question, I will do one of several things: give you straight forward answer (esp. for class administration question), ask clarifying questions (this will help me better understand what you're asking), ask leading questions (to help you claim ownership of the answer to the question you initially asked), and/or open the question up to class discussion. I might do other things such as asking for some time to think more deeply about your question but I will get back to you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq15" class="toggle" type="checkbox">
+                    <label for="faq15" class="lbl-toggle" tabindex="0">What are the Spring 2020 Important Dates?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Penn State's Important Dates for Spring 2020 are as follows</p>
+                            <ul>
+                                <li>Classes Begin on Monday, January 13th, 2020</li>
+                                <li>Regular Drop Deadline is Saturday, January 18th, 2020</li>
+                                <li>Regular Add Deadline is Sunday, January 19th, 2020</li>
+                                <li>Final Exam Conflict Filing Period is February 17th to March 8th, 2020</li>
+                                <li>Late Drop Deadline is Friday, April 10th, 2020</li>
+                                <li>Withdrawal Deadline is Friday, May 1st, 2020</li>
+                                <li>Classes End on Friday, May 1st, 2020</li>
+                                <li>Final Exam is TBA in the week of May 4th through 8th, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq27" class="toggle" type="checkbox">
+                    <label for="faq27" class="lbl-toggle" tabindex="0">What will we cover in the course?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>This course seeks to prepare you to have a solid foundation of the core ideas in the Analysis of Variance (ANOVA) toolbox. To this end, I anticipate that we will cover the following concepts:</p>
+                            <h3>Review Concepts</h3>
+                            <p>Exploratory Data Analysis vs. Confirmatory Data Analysis, Randomization, Descriptive (Incisive) Statistics (e.g., sample arithmetic mean, sample arithmetic variance, sums of squares, degrees of freedom, etc.), Methods of Statistical Inference (Replication vs. Simulation, Bootstrapping, Permutation, Monte Carlo A & B, Shortcuts-Parametric, Nonparametric)</p>
+                            <h3>New Concepts</h3>
+                            <p>Experimental Design, Types of Units, Factors and their levels, Hasse Diagrams, Model Building, Oneway ANOVA (Assumptions, Visualizations, Post Hoc, Effect Size, Writing Up Results), Model Remediation (Nonparametrics, Transformations, Box-Cox), Blocking, Twoway ANOVA (Interaction Terms), k-Way ANOVA, Fixed and & Random Effects, More Advanced Designs (Analysis of Covariance-ANCOVA, Repeated Measures, Nested, Response Surface, Split-plot).</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Key People</h2>
+                <div class="wrap-collabsible">
+                    <input id="faq5" class="toggle" type="checkbox">
+                    <label for="faq5" class="lbl-toggle" tabindex="0">Who is the instructor?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Dr. Neil Hatfield is your instructor. Hi! Check out my <a href="https://science.psu.edu/stat/people/njh5464" target="_blank" class="bodylinks">Penn State Profile</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq6" class="toggle" type="checkbox">
+                    <label for="faq6" class="lbl-toggle" tabindex="0">What do I call my instructor?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>You may call me Dr. Hatfield, Professor Hatfield, or Neil, whichever you feel comfortable. My pronouns are he/him/his.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq7" class="toggle" type="checkbox">
+                    <label for="faq7" class="lbl-toggle" tabindex="0">How do I get a hold of Neil?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>You can message me through Canvas, Penn State email, or stop by my office (425A Thomas Building). You can also call my office phone: (814) 863-7664</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq25" class="toggle" type="checkbox">
+                    <label for="faq25" class="lbl-toggle" tabindex="0">What happens if Neil isn't in class?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Don't fall for the "If the professor hasn't shown in 15 minutes, class is canceled" myth. This is not an actual University policy, no matter how much people wish. That being said, I typically do my best to get to class ~5-10 minutes early. If I'm not there, please wait and check your email/Canvas for any announcements.</p>
+                            <p>I might miss class due to illness or conferences. In such an event, I will either arrange for a substitute OR I will assign work for you to do. I will announce in class and on Canvas further details. Currently, I have a conference Feb. 27-29, 2020 where I will miss class.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Course Materials</h2>
+                <div class="wrap-collabsible">
+                    <input id="faq8" class="toggle" type="checkbox">
+                    <label for="faq8" class="lbl-toggle" tabindex="0">What book(s) do I need for this class?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>We will make use of G. W. Oehlert's <em>A First Course in Design and Analysis of Experiments</em> as our main reference textbook. You do not need to purchase this book; you can download a copy of the book for free from <a href="http://users.stat.umn.edu/~gary/book/fcdae.pdf" target="_blank" class="bodylinks">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq9" class="toggle" type="checkbox">
+                    <label for="faq9" class="lbl-toggle" tabindex="0">Do I need a computer?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Yes, you will need a computer. You may either use your own personal machine or one of the University's machines for this course.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq10" class="toggle" type="checkbox">
+                    <label for="faq10" class="lbl-toggle" tabindex="0">What software do I need?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>For this course, you will need the following software:</p>
+                            <ul>
+                                <li><a href="https://cran.r-project.org/" target="_blank" class="bodylinks">R (recommended)</a> or another Statistical Software Package.</li>
+                                <li><a href="https://rstudio.com/products/rstudio/download/#download" target="_blank" class="bodylinks">RStudio</a></li>
+                                <li>Additional R Packages (and their dependencies): ggplot2, psych, sjstats, knitr</li>
+                                <li>Some type of Office Suite (e.g., Microsoft Office, LibreOffice, Google Doc) or Markdown.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq11" class="toggle" type="checkbox">
+                    <label for="faq11" class="lbl-toggle" tabindex="0">Do I need any other technology?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>You will also need the Socrative Student App: This is a free application you may download to your phone or pull up in your web browser during class. Here are different links you may use to access the Socrative Student tool:</p>
+                            <ul>
+                                <li><a href="https://b.socrative.com/login/student/" target="_blank" class="bodylinks">Web Based</a></li>
+                                <li><a href="https://play.google.com/store/apps/details?id=com.socrative.student" target="_blank" class="bodylinks">Android</a></li>
+                                <li><a href="https://itunes.apple.com/us/app/socrative-student/id477618130" target="_blank" class="bodylinks">iPhone</a></li>
+                            </ul>
+                            <p>You can use a graphing calculator if you wish, but I don't recommend using it as your only technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Course Goals, Objectives, and Learning Outcomes</h2>
+                <div class="wrap-collabsible">
+                    <input id="faq12" class="toggle" type="checkbox">
+                    <label for="faq12" class="lbl-toggle" tabindex="0">What is the goal for this course?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>The Stat 461-Analysis of Variance course provides students with the foundational skills, understandings, and ways of thinking so that they can meaningfully address one-way and k-way data analysis problems and research questions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq13" class="toggle" type="checkbox">
+                    <label for="faq13" class="lbl-toggle" tabindex="0">What should I get out of this course? That is, what are the course objectives?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <ol type="1">
+                                <li>Students will develop their statistical literacy, reasoning, and thinking within the context of ANOVA problems.</li>
+                                <li>Students will develop their communication skills alongside their statistical understandings so that they can present their work to peers, superiors, and clients in effective ways.</li>
+                                <li>Students will develop their skill with at least one statistical software package so that they can use technology to handle computations, allowing them to focus on designs, interpretations, and communication.</li>
+                                <li>Students will develop their knowledge and understandings of ANOVA models and their applicability to real-world statistical research questions.</li>
+                                <li>Students will develop their skills in data analysis to describe what the data have to say and explain what could be going on in a particular context.</li>
+                                <li>Students will develop their skills in using the tools of statistical inference to make decisions.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq14" class="toggle" type="checkbox">
+                    <label for="faq14" class="lbl-toggle" tabindex="0">What will I be assessed on? What are the learning outcomes?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>You will be assessed on the following learning outcomes, organized by course objective:</p>
+                            <div class="wrap-collabsible">
+                                <input id="faq14a" class="toggle" type="checkbox">
+                                <label for="faq14a" class="lbl-toggle" tabindex="0">Students will develop their statistical literacy, reasoning, and thinking within the context of ANOVA problems.</label>
+                                <div class="collapsible-content">
+                                    <div class="content-inner">
+                                        <ol type="a">
+                                            <li>The student will learn to seek out the context for a given problem, research question, project, etc.</li>
+                                            <li>The student will learn to recognize the need for data.</li>
+                                            <li>The student will learn to recognize the role that variation plays in life.</li>
+                                            <li>The student will learn to organize and keep records so that others can reproduce his/her findings.</li>
+                                            <li>The student will learn to develop a method by which he/she can infer an answer to a research question using the information available.</li>
+                                            <li>The student will learn to discuss the role that Statistics plays in life.</li>
+                                            <li>The student will learn to attribute approaches to underlying philosophical positions (e.g., Exploratory Data Analysis, Confirmatory Data Analysis).</li>
+                                            <li>The student will learn to attribute results to either experimental or observational designs.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-collabsible">
+                                <input id="faq14b" class="toggle" type="checkbox">
+                                <label for="faq14b" class="lbl-toggle" tabindex="0">Students will develop their communication skills alongside their statistical understandings so that they can present their work to peers, superiors, and clients in effective ways.</label>
+                                <div class="collapsible-content">
+                                    <div class="content-inner">
+                                        <ol type="a">
+                                            <li>The student will learn to summarize the context of the research inquiry.</li>
+                                            <li>The student will learn to convey how a research question fits within the ANOVA frameworks.</li>
+                                            <li>The student will learn to interpret the values of statistics (both descriptive/incisive and inferential) within the current context.</li>
+                                            <li>The student will learn to design, create, and coordinate data visualizations to support others in their learning about the current context.</li>
+                                            <li>The student will learn to assess and constructively critique the work of others to improve both his/her work and the work of others.</li>
+                                            <li>The student will learn to generate a report that tells the data’s story, incorporating visualizations and statistics, and provides a basis for making a decision for answering the research question.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-collabsible">
+                                <input id="faq14c" class="toggle" type="checkbox">
+                                <label for="faq14c" class="lbl-toggle" tabindex="0">Students will develop their skill with at least one statistical software package so that they can use technology to handle computations, allowing them to focus on designs, interpretations, and communication.</label>
+                                <div class="collapsible-content">
+                                    <div class="content-inner">
+                                        <ol type="a">
+                                            <li>The student will learn to use technology to create data visualizations.</li>
+                                            <li>The student will learn to use technology to perform calculations on data sets.</li>
+                                            <li>The student will learn to use technology to analyze data to answer research questions.</li>
+                                            <li>The student will learn to use technology to his/her advantage when engaged in data analysis.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-collabsible">
+                                <input id="faq14d" class="toggle" type="checkbox">
+                                <label for="faq14d" class="lbl-toggle" tabindex="0">Students will develop their knowledge and understandings of ANOVA models and their applicability to real-word statistical research questions.</label>
+                                <div class="collapsible-content">
+                                    <div class="content-inner">
+                                        <ol type="a">
+                                            <li>The student will learn to interpret the terms in various ANOVA models.</li>
+                                            <li>The student will learn to explain the difference between the One-way Cell Means model and the Treatment Effects Model.</li>
+                                            <li>The student will learn to parse a given context into terms in a model.</li>
+                                            <li>The student will learn to use ANOVA screens for one-way and one-way with blocking designs to construct a model.</li>
+                                            <li>The student will learn to differentiate between fixed and random effects.</li>
+                                            <li>The student will learn to provide examples of One-way ANOVA, k-way ANOVA, Blocking, Repeated Measures, ANCOVA, and Response Surface designs.</li>
+                                            <li>The student will learn to interpret the estimates of model terms within the present context.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-collabsible">
+                                <input id="faq14e" class="toggle" type="checkbox">
+                                <label for="faq14e" class="lbl-toggle" tabindex="0">Students will develop their skills in data analysis to describe what the data have to say and explain what could be going on in a particular context.</label>
+                                <div class="collapsible-content">
+                                    <div class="content-inner">
+                                        <ol type="a">
+                                            <li>The student will learn to differentiate between attributes that are necessary to answer a research question and those that are not.</li>
+                                            <li>The student will learn to provide examples of the three types of variation that statisticians deal with.</li>
+                                            <li>The student will learn to decide what kinds of variation are at play in a particular context.</li>
+                                            <li>The student will learn to identify possible sources of variation in a particular context.</li>
+                                            <li>The student will learn to classify data according to the context and nature (data type).</li>
+                                            <li>The student will learn to classify data according to the context and use for analysis (modeling type).</li>
+                                            <li>The student will learn to analyze data visualizations.</li>
+                                            <li>The student will learn to differentiate between attributes of a collection and statistics that measure those attributes.</li>
+                                            <li>The student will learn to develop ways to measure attributes of data collections.</li>
+                                            <li>The student will learn to recommend which statistic(s) would be the best to use for measuring certain attributes.</li>
+                                            <li>The student will learn to plan data analysis both before and after data collection.</li>
+                                            <li>The student will learn to manipulate data sets in preparation for analysis.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-collabsible">
+                                <input id="faq14f" class="toggle" type="checkbox">
+                                <label for="faq14f" class="lbl-toggle" tabindex="0">Students will develop their skills in using the tools of statistical inference to make decisions.</label>
+                                <div class="collapsible-content">
+                                    <div class="content-inner">
+                                        <ol type="a">
+                                            <li>The student will learn to analyze a situation for a statistical research question.</li>
+                                            <li>The student will learn to transform a research question into testable hypotheses.</li>
+                                            <li>The student will learn to design a method by which to answer a statistical research question.</li>
+                                            <li>The student will learn to design a method to get to a sampling distribution for his/her selected estimator.</li>
+                                            <li>The student will learn to differentiate between four types of inference errors.</li>
+                                            <li>The student will learn to recommend a Type I Error Rate to control for, using what method, and at what level.</li>
+                                            <li>The student will learn how to check his/her assumptions when carrying out hypothesis tests.</li>
+                                            <li>The student will learn to distinguish between productive and problematic interpretations of p-values.</li>
+                                            <li>The student will learn to distinguish between productive and problematic interpretations of confidence intervals.</li>
+                                            <li>The student will learn to appraise effect sizes given the context.</li>
+                                            <li>The student will learn to synthesize the results of a hypothesis test in a report.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Student Responsibilities</h2>
+                <div class="wrap-collabsible">
+                    <input id="faq28" class="toggle" type="checkbox">
+                    <label for="faq28" class="lbl-toggle" tabindex="0">What are my most important responsibilities as a student in this class?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Your most important responsibility in this course is to follow the Rules of Engagement:</p>
+                            <ol type="1">
+                                <li><strong>Speak with Meaning:</strong> What you say should carry meaning to others. Reference attributes (quantities and qualities)—NO pronouns. Explain and justify your approach.</li>
+                                <li><strong>Exhibit Intellectual Integrity:</strong> Base your conjecture on a logical foundation; don’t pretend to understand when you don’t.</li>
+                                <li><strong>Strive to Make Sense:</strong> Persevere in making sense of your peer’s thinking.</li>
+                                <li><strong>Respect the Learning Process of Others:</strong> Allow others the opportunity to think, reflect and construct. When assisting your peers, pose questions to help them construct meaning rather than show them how to get the answer.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq29" class="toggle" type="checkbox">
+                    <label for="faq29" class="lbl-toggle" tabindex="0">I feel like I'm struggling. What can I do?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Come talk to me! I'm one of those professors who love when students come to Student Hours and/or my office. I can't help you if I'm not aware of what your feeling and thinking. Don't wait until the last minute.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq30" class="toggle" type="checkbox">
+                    <label for="faq30" class="lbl-toggle" tabindex="0">I heard you record and post videos of class. Does this mean I can skip class?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>No. I record my computer screen and audio record the classroom to make a video record for us. This allows you to take better notes at home and be fully engaged in class during class. These recordings are <strong>not</strong> a substitute for attending class.</p>
+                            <p>Your success in this class is dependent upon your attendance and participation. You must attend each class meeting. If you must miss class, please contact me via email. I reserve the right to decide whether to excuse an absence. I define participation as contributing to statistical discussions relative to your assignments, completing assignments, and presenting your statistical thinking to the class. Active participants continue participating outside of scheduled class hours by forming study groups, asking questions outside of class. Failure to participate during class will result in a loss of participation points allotted for each class session. Examples of non-participation include, but are not limited to, working on assignments from other courses, texting during class, or engaging in discussions with students on topics outside of statistics.</p>
+                            <p>If you will be absent from class due to a religious observance or practice as well as participating in a university sanctioned event/activity, you are responsible for informing the instructor during the first week of class. Your instructor will work with you on alternative and reasonable arrangements for any time missed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq31" class="toggle" type="checkbox">
+                    <label for="faq31" class="lbl-toggle" tabindex="0">What's the deal with submitting assignments late?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>To ensure that I can get feedback to you in as timely a fashion as possible, I ask that you turn your homework in on time. While I typically do not accept late work, students may contact me about getting a limited extension. You must provide all of the following:</p>
+                            <ul>
+                                <li>Contact me a minimum of two (2) days (48 hours) before the posted due date of the assignment.</li>
+                                <li>Show that you have made some progress on the assignment already.</li>
+                                <li>Explain why you need the additional time.</li>
+                                <li>Propose a new due date.</li>
+                            </ul>
+                            <p>I will review each request on a case-by-case basis and get back to you with the extended due date that I grant you, which might not be the date you propose. Until you hear back from me, please do not assume that you have the extension. You may only ask for one extension per assignment.</p>
+                            <p>If you find yourself asking for multiple extensions, please reach out to me to discuss what’s going on. I’ll do the same if I feel that you’ve made a large number of extension requests.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Assignments and Grades</h2>
+                <div class="wrap-collabsible">
+                    <input id="faq32" class="toggle" type="checkbox">
+                    <label for="faq32" class="lbl-toggle" tabindex="0">What kinds of assignments will we get?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>There are five major types of assignments you'll be asked to complete over the semester:</p>
+                            <ol type="1">
+                                <li><strong>Homework (General Assignments):</strong> Throughout the semester, you will have homework assignments, which you need to complete as assigned. These assignments will involve problem solving and will require you to reveal your reasoning, justification, and reflection on your thinking. You are responsible for completing the homework assignments prior to the announced deadline. Your instructor will review your homework and your grade is based on completion, accuracy, neatness, and work shown.</li>
+                                <li><strong>Quizzes:</strong> From time to time, I will give short quizzes, either announced or un-announced (“pop”) during the semester. I will only allow making up a missed quiz within the scope of our attendance and university policies. Additionally, some quizzes may be take-home and completed via Canvas.</li>
+                                <li><strong>Tests:</strong> There will be two (2) tests given during the semester. You will work alone to complete each test to show your understanding of the course material. The best possible preparation for the tests is regular attendance and completion of assigned homework. Making up a missed test will be set up on a case-by-case basis. Such requests should include legitimate reasons with sufficient/appropriate written documents.</li>
+                                <li><strong>Final Exam:</strong> There will be one (1) comprehensive Final Exam for you to complete at the end of the semester. You will work alone to complete the tasks to demonstrate your understanding and mastery of the course material. The class will decide whether to complete this in-person or as a take-home.</li>
+                                <li><strong>Course Project:</strong> Statistics is an interactive field where you must engage with data to help you develop ways of thinking that will serve you well in your future endeavors. Thus, there will be small projects as part of assignments and class activities as well as an on-going data analysis project this semester. I will provide further details in class.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq33" class="toggle" type="checkbox">
+                    <label for="faq33" class="lbl-toggle" tabindex="0">Do you give Extra Credit?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Extra credit is not a student right, but a privilege granted at my discretion. I will let everyone about extra credit opportunities throughout the semester. I will announce these opportunities to the class as a whole and never to individual students.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq34" class="toggle" type="checkbox">
+                    <label for="faq34" class="lbl-toggle" tabindex="0">How do you grade?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Each question on homework, quiz, test, and the final exam will be tied to at least one of the learning outcomes. Your score on that question will be score as one of the following:</p>
+                            <ul>
+                                <li><strong>Full Credit:</strong> your response is consistent with the target ways of thinking. Your response might not be worded in the same way as what's in the answer key, but the conveyed meaning is productive. You get 100% of the points for that question.</li>
+                                <li><strong>Advanced:</strong> your response is nearly consistent with the answer key. There might be 1-2 minor issues that you need to work on. You get 85% of the points for that question.</li>
+                                <li><strong>Proficient:</strong> your response has at least half of the elements of the answer key but there are elements that conflict with the answer key. These discrepancies are minor or moderate. You get 70% of the points for that question.</li>
+                                <li><strong>(Not Yet) Progressing:</strong> your response has some elements (less than half) of the answer key but there are multiple discrepancies for you to address. A single major discrepancy (e.g., circular reasoning) would put your response in this category. You get 50% of the points for that question.</li>
+                                <li><strong>(Not Yet) Beginning:</strong> your response speaks to the prompt but there are multiple major discrepancies and/or the response is incomplete (e.g., you started answering the question but did not finish your response). You get 25% of the points for that question.</li>
+                                <li><strong>Not Shown (Off Topic/Can't Follow/Didn't Answer):</strong> Any of the following:
+                                    <ul>
+                                        <li> your response does not reasonably address the question posed (E.g., stated true facts about probability when asked to interpret a probability value)</li>
+                                        <li>I can’t reasonably follow the your response.</li>
+                                        <li>You did not attempt a response (e.g., blank answers)</li>
+                                    </ul>
+                                    You receive 0% of the points for that question.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq35" class="toggle" type="checkbox">
+                    <label for="faq35" class="lbl-toggle" tabindex="0">What counts as a Minor, Moderate, or Major Discrepancy/Issue?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Throughout the semester, your work from all homework, quizzes, tests, and the data analysis project connects to the various learning outcomes associated with this course. The learning outcomes allow for you to demonstrate your skills and understanding over the whole semester rather than a “high stakes” exams. For each learning outcome, your scores on associated questions helps determine your status on that learning outcome. There are five statuses:</p>
+                            <ul>
+                                <li>Minor</li>
+                                <ul>
+                                    <li>Grammar issues that interfere with interpreting your response</li>
+                                    <li>Missing a non-critical part of solution</li>
+                                    <li>Calculational error that the grader can track (e.g., a +/- error)</li>
+                                    <li>Using lower rather than upper case for a stochastic variable</li>
+                                    <li>Using the wrong unit (e.g., problems says data units are inches, student uses centimeters)</li>
+                                    <li>Tests Only: using the word “it” (provided we can reasonably still make sense of the response)</li>
+                                </ul>
+                                <li>Moderate</li>
+                                <ul>
+                                    <li>Missing several parts of the prompt</li>
+                                    <li>Applying the wrong unit to a statistic’s value (e.g., not making the units on values of the SAM reflect the rate nature)</li>
+                                    <li>Using the wrong notation (e.g., Probability Notation, $P\left[X\leq5|X\sim\mathcal{N}\left(0,1\right)\right]$, instead Distribution Function Notation, $C_{N}\left(5|0,1\right)$ )</li>
+                                    <li>Tests Only: using the word “average” outside of the phrases “average rate of change” and “l’homme moyen”</li>
+                                </ul>
+                                <li>Major</li>
+                                <ul>
+                                    <li>Restating the prompt as the response (e.g., Prompt: Explain what a probability value of 0.2 means; Response: That the probability of something happening is 20%.)</li>
+                                    <li>Only listing the attribute when asked to define a stochastic variable.</li>
+                                    <li>Circular Reasoning (e.g., probability is chance; probability is how likely)</li>
+                                    <li>Giving a response consistent with specifically identified problematic meanings in class (red text in slides) (e.g., distribution as a picture, distribution as a listing of what values and how often they occur, interpreting confidence intervals with the Fundamental Confidence Fallacy)</li>
+                                    <li>Other conceptual issues</li>
+                                </ul>
+                            </ul>
+                            <p>These are examples to help you get a sense of the potential issues.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq36" class="toggle" type="checkbox">
+                    <label for="faq36" class="lbl-toggle" tabindex="0">How is my final course grade calculated?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Your grade is dependent upon how well you demonstrate your comprehension of the subject through application and completion of the all assignments, projects, tests, and the final exam.</p>
+                            <p>I will determine your final course grades in a data driven way. This will ensure that 1) I assess you against yourself and yourself alone, 2) the process remains equitable to all members of the course, and 3) I assess you on what you understand. To this end, your final grade will be based upon the following components, listed in order of importance:</p>
+                            <ol type="1">
+                                <li>Number of Learning Outcomes at the Advanced Level (85% or higher)</li>
+                                <li>Number of Learning Outcomes at the Proficient Level (70% or higher)</li>
+                                <li>Number of Learning Outcome Categories at the Advanced Level</li>
+                                <li>Number of Learning Outcome Categories at the Proficient Level</li>
+                                <li>Weighted Course Total</li>
+                            </ol>
+                            <p>If you wish to see where you are at in terms of learning outcomes, please come see me during student hours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq37" class="toggle" type="checkbox">
+                    <label for="faq37" class="lbl-toggle" tabindex="0">My weighted total looks really low and I'm worried about passing the class. What should I do?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>You can use the Weighted Course Total as an imperfect and biased proxy for how you are doing in class. Often this value is lower than how you are actually doing in the course. However, don’t let this encourage you to slack off in class. The weighting for categories is as follows:</p>
+                            <ul>
+                                <li>Two Tests at 15% each: 30% weight</li>
+                                <li>Final Exam: 25% weight</li>
+                                <li>Course Project: 20%</li>
+                                <li>Homework/Quizzes: 20%</li>
+                                <li>Attendance/Participation: 5%</li>
+                            </ul>
+                            <p>If you wish to understand how you're doing in the class, come see me.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq38" class="toggle" type="checkbox">
+                    <label for="faq38" class="lbl-toggle" tabindex="0">This is a weird way to grade and I don't like it.</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Standards or Mastery based grading can be uncomfortable in your first experience. I believe that this method allows me to best describe your understanding on the course content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq39" class="toggle" type="checkbox">
+                    <label for="faq39" class="lbl-toggle" tabindex="0">What do you report to the University at the end of the semester?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>At the end of semester, I report a standard letter grade to the Registrar. Since I use a data driven technique, I can't say what the exact breaks are for each letter grade. However, I have noticed the following <em>rough</em> guidelines:</p>
+                            <ol type="A">
+                                <li>Having at least 75% of the learning outcomes at the Proficient and Advanced Levels</li>
+                                <li>Having at least 75% of the learning outcomes at the Proficient Level and at least 50% at the Advanced Level</li>
+                                <li>Having at least 50% of the learning outcomes at the Proficient Level and at least 25% at the Advanced Level</li>
+                                <li>Having at least 25% of the learning outcomes at the Proficient Level and as many at the Advanced Level as possible.</li>
+                                <li value="6">Having less than 25% of the learning outcomes at the Proficient Level.</li>
+                            </ol>
+                            <p>Again, these are <em>rough</em> guidelines and should not be taken as absolute grade breaks.</p>
+                            <p>You'll notice that Plus and Minus versions are missing from the above list. I generally avoid minuses (your GPA doesn't need the hit) but I do use pluses. However, those will entirely depend on the semester's data.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Important Policies</h2>
+                <div class="wrap-collabsible">
+                    <input id="faq16" class="toggle" type="checkbox">
+                    <label for="faq16" class="lbl-toggle" tabindex="0">Are there any important policies that I should keep in mind?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>There are several policies to keep in mind throughout the semester; some are for this class, others are put in place by the University. Check out them out below.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq17" class="toggle" type="checkbox">
+                    <label for="faq17" class="lbl-toggle" tabindex="0">May I use my cell phone in class?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Outside of using your cell phone during Socrative activities, I ask that you please keep your cell phones on silent and put away during class. This is to help reduce the number of distractions in the room for yourself and others. If there is a call you are expecting (e.g., you have a sick family member) let me know before class.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq18" class="toggle" type="checkbox">
+                    <label for="faq18" class="lbl-toggle" tabindex="0">May I use my computer, iPad, or other tablet device in class?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>I recognize that some students prefer to take notes via their laptop computers, iPads, or other tablet devices. You are welcome to do this AND if you and some classmates want to build a team notes document, you may. Additionally, we will be using statistical software all semester so having your laptop (or partnering with someone who has one in class) is an excellent idea. However, you should not let the use of your computing device become a distraction to your participation in class, nor should you allow your activity on the device to impede your learning or the learning of others around you. To this end, I will ask that you not be on any websites that do not directly pertain to our class (e.g., Facebook, Reddit, Tumblr, YouTube, Instagram, etc.). Additionally, you should not be working on items for other classes. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq19" class="toggle" type="checkbox">
+                    <label for="faq19" class="lbl-toggle" tabindex="0">I need accommodations to support my success. What do I need to do?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Make sure you speak with me as soon as possible so that we can make appropriate plans.</p>
+                            <p>Penn State welcomes students with disabilities into the University's educational programs. Every Penn State campus has an office for students with disabilities. The <a href="http://equity.psu.edu/sdr/campus-contacts" target="_blank" class="bodylinks">Student Disability Resources (SDR) website</a> provides contact information for every Penn State campus.</p>
+                            <p>In order to receive consideration for reasonable accommodations, you must contact the appropriate disability services office at the campus where you are officially enrolled, participate in an intake interview, and provide documentation. For more information, check out the <a href="http://equity.psu.edu/sdr/guidelines" target="_blank" class="bodylinks">Guidelines page</a>. If the documentation supports your request for reasonable accommodations, your campus’s disability services office will provide you with an accommodation letter. Please share this letter with your instructors and discuss the accommodations with them as early in your courses as possible. You must follow this process for every semester that you request accommodations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq20" class="toggle" type="checkbox">
+                    <label for="faq20" class="lbl-toggle" tabindex="0">May I use my own past work and/or the work of others in this course?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>No. This course adheres to the University's Academic Integrity Policy.</p>
+                            <p>Academic integrity is the pursuit of scholarly activity in an open, honest and responsible manner. Academic integrity is a basic guiding principle for all academic activity at The Pennsylvania State University, and all members of the University community are expected to act in accordance with this principle. Consistent with this expectation, the University’s Code of Conduct states that all students should act with personal integrity, respect other students’ dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts. Academic integrity includes a commitment by all members of the University community not to engage in or tolerate acts of falsification, misrepresentation or deception. Such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.</p>
+                            <p>Please be aware that plagiarism, including self plagiarism, collusion, ghost writing, and cheating are all violations of Academic Integrity. If you have any questions, please come talk to me <strong>before</strong> you submit an assignment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq22" class="toggle" type="checkbox">
+                    <label for="faq22" class="lbl-toggle" tabindex="0">What is self-plagiarism?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Self-plagiarism occurs whenever a person re-uses old work with minor revisions. For example, if you did a data analysis project in Stat 200 and then submitted that for an assignment in Stat 461, you're committing self-plagiarism. All work submitted for a grade or feedback in a course should not be used for another course.</p>
+                            <p>If you want to merge projects from 2 (or more courses) into a single project that you submit for a grade in both courses, such a thing is possible. However, you must first ask all course instructors about doing so first and then the negotiations for what your requirements are will begin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq21" class="toggle" type="checkbox">
+                    <label for="faq21" class="lbl-toggle" tabindex="0">I'm feeling stressed out. What can I do?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Many students at Penn State face personal challenges or have psychological needs that may interfere with their academic progress, social development, or emotional well-being. The university offers a variety of confidential services to help you through difficult times, including individual and group counseling, crisis intervention, consultations, online chats, and mental health screenings. University staff, who welcome all students and embrace a philosophy respectful of clients’ cultural and religious backgrounds, and sensitive to differences in race, ability, gender identify, and sexual orientation, provide these services.</p>
+                            <p><a href="http://studentaffairs.psu.edu/counseling/" target="_blank" class="bodylinks">Counseling and Psychological Services at University Park (CAPS)</a> Phone: 814-863-0395
+                                <br />
+                                <a href="http://senate.psu.edu/faculty/counseling-services-at-commonwealth-campuses/" target="_blank" class="bodylinks">Counseling and Psychological Services at Commonwealth Campuses</a></p>
+                            <p>Penn State Crisis Line (24 hours/7 days/week): 877-229-6400
+                                <br /> Crisis Text Line (24 hours/7 days/week): Text LIONS to 741741</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq23" class="toggle" type="checkbox">
+                    <label for="faq23" class="lbl-toggle" tabindex="0">What happens when the University closes?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Should the University close due to weather or other campus situation, please make sure you follow any directions included in the University's official announcement.</p>
+                            <p>In the event that the University closes before our scheduled class time, we will not meet. However, please check Canvas as soon as possible for any course messages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq24" class="toggle" type="checkbox">
+                    <label for="faq24" class="lbl-toggle" tabindex="0">I commute to campus and I feel that the roads are unsafe. Should I skip class?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Attending class and participating in discussions are important to your learning. However, you being safe is more so. Please do not take any unnecessary risks to get to class. Contact me as soon as possible so that we can negotiate any make up work.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq26" class="toggle" type="checkbox">
+                    <label for="faq26" class="lbl-toggle" tabindex="0">How do I report bias?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Penn State takes great pride to foster a diverse and inclusive environment for students, faculty, and staff. Acts of intolerance, discrimination, or harassment due to age, ancestry, color, disability, gender, gender identity, national origin, race, religious belief, sexual orientation, or veteran status are not tolerated and can be reported through Educational Equity via the <a href="http://equity.psu.edu/reportbias/" target="_blank" class="bodylinks">Report Bias webpage</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <p><em>From Neil:</em> I will update this page as regularly as I can to address any questions that you and your classmates bring up as well as any changes that we need to make.</p>
+            </div>
+            <div id="footer">
+                <div align="center">
+                    <a href="http://stat.psu.edu"><img border="0" alt="Statistics at Penn State" src="1_Images/psu_mark.jpg" class="noborder" style="width: 318px; height: 85px;" /></a>
+                    <br /> © 2020 Neil Hatfield
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
