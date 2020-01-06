@@ -8,24 +8,7 @@
     <meta name="author" content="Neil Hatfield" />
     <meta name="keywords" content="Neil Hatfield" />
     <!--- The below script is from https://alligator.io/css/collapsible/ --->
-    <script>
-        let myLabels = document.querySelectorAll('.lbl-toggle');
-
-        Array.from(myLabels).forEach(label => {
-            label.addEventListener('keydown', e => {
-                // 32 === spacebar
-                // 13 === enter
-                if (e.which === 32 || e.which === 13) {
-                    e.preventDefault();
-                    label.click();
-                };
-            });
-        });
-    </script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
     </script>
 </head>
 
@@ -34,7 +17,7 @@
         <div id="innerwrapper">
             <div id="header">
                 <h1 style="text-align: center;">Syllabus (Course FAQ) for Stat 461</h1>
-                <br/>
+                <br />
                 <ul id="nav">
                     <li>Return to Neil's Webpage: </li>
                     <li><a href="index.html"><em>About Me</em></a></li>
@@ -129,8 +112,8 @@
                     <label for="faq41" class="lbl-toggle" tabindex="0">What's the course schedule?</label>
                     <div class="collapsible-content">
                         <div class="content-inner">
-                            <p>I have prepare a <em>tentative</em> course schedule. Please keep in mind that this schedule can and will change to meet the needs of our class. These schedules load as PDFs.<br/>
-                                <a href="https://www.dropbox.com/s/u43qr60pbh357jv/MWFSchedule.pdf?dl=0" target="_blank" class="bodylinks">Section 1 (MWFs)</a><br/>
+                            <p>I have prepare a <em>tentative</em> course schedule. Please keep in mind that this schedule can and will change to meet the needs of our class. These schedules load as PDFs.<br />
+                                <a href="https://www.dropbox.com/s/u43qr60pbh357jv/MWFSchedule.pdf?dl=0" target="_blank" class="bodylinks">Section 1 (MWFs)</a><br />
                                 <a href="https://www.dropbox.com/s/v307nbdlebob9w8/TRFSchedule.pdf?dl=0" target="_blank" class="bodylinks">Section 3 (TThFs)</a></p>
                         </div>
                     </div>
@@ -191,8 +174,8 @@
                         <div class="content-inner">
                             <p>We will make use of G. W. Oehlert's <em>A First Course in Design and Analysis of Experiments</em> as our main reference textbook. You do not need to purchase this book; you can download a copy of the book for free from <a href="http://users.stat.umn.edu/~gary/book/fcdae.pdf" target="_blank" class="bodylinks">here</a>.</p>
                             <p>Additionally, there will be extra readings that I will provide throughout the semester. If you want to get started, here are two: <br />
-                            <a href="1_Resources/readings/Introduction_MeaningfulStatistics.pdf" target="_blank" class="bodylinks">Introduction to Meaningful Statistics</a> (a brief introduction to Statistics that will help you better understand my approach to teaching) <br/>
-                            <a href="1_Resources/readings/What_Is_Statistics.pdf" target="_blank" class="bodylinks">What is Statistics?</a> (This help you understand my approach to Statistics.)</p>
+                                <a href="1_Resources/readings/Introduction_MeaningfulStatistics.pdf" target="_blank" class="bodylinks">Introduction to Meaningful Statistics</a> (a brief introduction to Statistics that will help you better understand my approach to teaching) <br />
+                                <a href="1_Resources/readings/What_Is_Statistics.pdf" target="_blank" class="bodylinks">What is Statistics?</a> (This help you understand my approach to Statistics.)</p>
                         </div>
                     </div>
                 </div>
@@ -449,6 +432,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="wrap-collabsible">
+                    <input id="faq20" class="toggle" type="checkbox">
+                    <label for="faq20" class="lbl-toggle" tabindex="0">May I use my own past work and/or the work of others in this course?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>No. This course adheres to the University's Academic Integrity Policy.</p>
+                            <p>Academic integrity is the pursuit of scholarly activity in an open, honest and responsible manner. Academic integrity is a basic guiding principle for all academic activity at The Pennsylvania State University, and all members of the University community are expected to act in accordance with this principle. Consistent with this expectation, the University’s Code of Conduct states that all students should act with personal integrity, respect other students’ dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts. Academic integrity includes a commitment by all members of the University community not to engage in or tolerate acts of falsification, misrepresentation or deception. Such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.</p>
+                            <p>Please be aware that plagiarism, including self plagiarism, collusion, ghost writing, and cheating are all violations of Academic Integrity. If you have any questions, please come talk to me <strong>before</strong> you submit an assignment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq22" class="toggle" type="checkbox">
+                    <label for="faq22" class="lbl-toggle" tabindex="0">What is self-plagiarism?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Self-plagiarism occurs whenever a person re-uses old work with minor revisions. For example, if you did a data analysis project in Stat 200 and then submitted that for an assignment in Stat 461, you're committing self-plagiarism. All work submitted for a grade or feedback in a course should not be used for another course.</p>
+                            <p>If you want to merge projects from 2 (or more courses) into a single project that you submit for a grade in both courses, such a thing is possible. However, you must first ask all course instructors about doing so first and then the negotiations for what your requirements are will begin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="faq47" class="toggle" type="checkbox">
+                    <label for="faq47" class="lbl-toggle" tabindex="0">What are the differences between collusion, group work, and working together?</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <p>Collusion is when a group of students work together and submit <em>essentially identical</em> copies of the same assignment as individuals when the assignment is <strong>not</strong> a group assignment. This is a form of cheating and violates Academic Integrity.</p>
+                            <p>Group work occurs when the instructor gives an activity or assignment that is meant to be completed by a group of students together and submit a single write up with everyone's names.</p>
+                            <p>Students may work together on assignments, but each one is responsible for writing and running their own code as well as writing up the results to answer the question/prompt. Working together allows students to bounce ideas off one another and help debug their code; each student still submits their own work.</p>
+                        </div>
+                    </div>
+                </div>
                 <h2>Assignments and Grades</h2>
                 <div class="wrap-collabsible">
                     <input id="faq32" class="toggle" type="checkbox">
@@ -556,7 +571,7 @@
                                 <ul>
                                     <li>Missing several parts of the prompt</li>
                                     <li>Applying the wrong unit to a statistic’s value (e.g., not making the units on values of the SAM reflect the rate nature)</li>
-                                    <li>Using the wrong notation (e.g., Probability Notation, $P\left[X\leq5|X\sim\mathcal{N}\left(0,1\right)\right]$, instead Distribution Function Notation, $C_{N}\left(5|0,1\right)$ )</li>
+                                    <li>Using the wrong notation (e.g., Probability Notation, \(P\left[X\leq5|X\sim\mathcal{N}\left(0,1\right)\right]\), instead Distribution Function Notation, \(C_{N}\left(5|0,1\right)\) )</li>
                                     <li>Tests Only: using the word “average” outside of the phrases “average rate of change” and “l’homme moyen”</li>
                                 </ul>
                                 <li>Major</li>
@@ -674,27 +689,6 @@
                     </div>
                 </div>
                 <div class="wrap-collabsible">
-                    <input id="faq20" class="toggle" type="checkbox">
-                    <label for="faq20" class="lbl-toggle" tabindex="0">May I use my own past work and/or the work of others in this course?</label>
-                    <div class="collapsible-content">
-                        <div class="content-inner">
-                            <p>No. This course adheres to the University's Academic Integrity Policy.</p>
-                            <p>Academic integrity is the pursuit of scholarly activity in an open, honest and responsible manner. Academic integrity is a basic guiding principle for all academic activity at The Pennsylvania State University, and all members of the University community are expected to act in accordance with this principle. Consistent with this expectation, the University’s Code of Conduct states that all students should act with personal integrity, respect other students’ dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts. Academic integrity includes a commitment by all members of the University community not to engage in or tolerate acts of falsification, misrepresentation or deception. Such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.</p>
-                            <p>Please be aware that plagiarism, including self plagiarism, collusion, ghost writing, and cheating are all violations of Academic Integrity. If you have any questions, please come talk to me <strong>before</strong> you submit an assignment.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-collabsible">
-                    <input id="faq22" class="toggle" type="checkbox">
-                    <label for="faq22" class="lbl-toggle" tabindex="0">What is self-plagiarism?</label>
-                    <div class="collapsible-content">
-                        <div class="content-inner">
-                            <p>Self-plagiarism occurs whenever a person re-uses old work with minor revisions. For example, if you did a data analysis project in Stat 200 and then submitted that for an assignment in Stat 461, you're committing self-plagiarism. All work submitted for a grade or feedback in a course should not be used for another course.</p>
-                            <p>If you want to merge projects from 2 (or more courses) into a single project that you submit for a grade in both courses, such a thing is possible. However, you must first ask all course instructors about doing so first and then the negotiations for what your requirements are will begin.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-collabsible">
                     <input id="faq21" class="toggle" type="checkbox">
                     <label for="faq21" class="lbl-toggle" tabindex="0">I'm feeling stressed out. What can I do?</label>
                     <div class="collapsible-content">
@@ -747,5 +741,18 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+    <script>
+        let myLabels = document.querySelectorAll('.lbl-toggle');
+
+        Array.from(myLabels).forEach(label => {
+            label.addEventListener('keydown', e => {
+                // 32 === spacebar
+                // 13 === enter
+                if (e.which === 32 || e.which === 13) {
+                    e.preventDefault();
+                    label.click();
+                };
+            });
+        });
+    </script>
+</body></html>
