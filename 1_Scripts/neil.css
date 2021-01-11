@@ -381,3 +381,9 @@ input[type='checkbox'] {
   border-bottom-right-radius: 7px;
   padding: .5rem 1rem 0.5rem 2rem;
 }
+
+ul .colUL {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
