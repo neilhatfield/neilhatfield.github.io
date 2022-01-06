@@ -429,4 +429,8 @@ input[type='checkbox'] {
 	vertical-align:middle;
 }
 
-
+.gsc-input {
+    font-size: 16px;
+    background: white;
+    color: black;
+}
