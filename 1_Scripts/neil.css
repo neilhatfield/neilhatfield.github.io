@@ -429,3 +429,6 @@ input[type='checkbox'] {
 	vertical-align:middle;
 }
 
+th, td {
+	padding: 0px 15px;
+}
