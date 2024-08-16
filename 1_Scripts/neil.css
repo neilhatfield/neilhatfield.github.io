@@ -440,3 +440,8 @@ input[type='checkbox'] {
 th, td {
 	padding: 0px 15px;
 }
+
+dt {
+	font-size: 1.1rem;
+	font-weight: 700;
+}
