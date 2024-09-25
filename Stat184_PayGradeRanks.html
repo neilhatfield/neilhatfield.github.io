@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <title>Stat 184 Pay Grade and Rank</title>
+    <meta name="author" content="Neil Hatfield" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body>
+  <style>
+    th {
+      background-color: #38693D;
+      color: white;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #EBF4E9;
+    }
+  </style>
+  <h1>Stat 184 Activity Information</h1>
+  <p>This page contains information needed for a Stat 184 activity meant to help students practice web scrapping and wrangling data. Information in this table comes from the <a href="https://www.defense.gov/Our-Story/Insignias/">Defense Almanac and Department of Defense Insignias</a>.</p>
+  <table>
+    <caption>Armed Forces Comparative Pay Grades and Ranks</caption>
+    <thead>
+      <tr>
+        <th rowspan = "2"></th>
+        <th rowspan = "2" scope="col">Pay Grade</th>
+        <th colspan="6" scope="col" align="center">Ranks by Branch of Service</th>
+      </tr>
+      <tr>
+        <th scope="col">Army</th>
+        <th scope="col">Navy</th>
+        <th scope="col">Marine Corps</th>
+        <th scope="col">Air Force</th>
+        <th scope="col">Space Force</th>
+        <th scope="col">Coast Guard</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="9" scope = "row" style="writing-mode:vertical-lr; transform: rotate(180deg);">Enlisted Members</th>
+        <td>E1</td>
+        <td>Private</td>
+        <td>Seaman Recruit</td>
+        <td>Private</td>
+        <td>Airman Basic</td>
+        <td>Specialist 1</td>
+        <td>Seaman Recruit</td>
+      </tr>
+      <tr>
+        <td>E2</td>
+        <td>Private</td>
+        <td>Seaman Apprentice</td>
+        <td>Private First Class</td>
+        <td>Airman</td>
+        <td>Specalist 2</td>
+        <td>Seaman Apprentice</td>
+      </tr>
+      <tr>
+        <td>E3</td>
+        <td>Private First Class</td>
+        <td>Seaman</td>
+        <td>Lance Corporal</td>
+        <td>Airman First Class</td>
+        <td>Specialist 3</td>
+        <td>Seaman</td>
+      </tr>
+      <tr>
+        <td>E4</td>
+        <td>Corporal OR Specialist</td>
+        <td>Petty Officer Third Class</td>
+        <td>Corporal</td>
+        <td>Senior Airman</td>
+        <td>Specialist 4</td>
+        <td>Petty Officer Third Class</td>
+      </tr>
+      <tr>
+        <td>E5</td>
+        <td>Sergeant</td>
+        <td>Petty Officer Second Class</td>
+        <td>Sergeant</td>
+        <td>Staff Sergeant</td>
+        <td>Sergeant</td>
+        <td>Petty Officer Second Class</td>
+      </tr>
+      <tr>
+        <td>E6</td>
+        <td>Staff Sergeant</td>
+        <td>Petty Officer First Class</td>
+        <td>Staff Sergeant</td>
+        <td>Technical Sergeant</td>
+        <td>Technical Sergeant</td>
+        <td>Petty Officer First Class</td>
+      </tr>
+      <tr>
+        <td>E7</td>
+        <td>Sergeant First Class</td>
+        <td>Chief Petty Officer</td>
+        <td>Gunnery Sergeant</td>
+        <td>Master Sergeant OR First Sergeant</td>
+        <td>Master Sergeant</td>
+        <td>Chief Petty Officer</td>
+      </tr>
+      <tr>
+        <td>E8</td>
+        <td>First Sergeant OR Master Sergeant</td>
+        <td>Senior Chief Petty Officer</td>
+        <td>First Sergeant OR Master Sergeant</td>
+        <td>Senior Master Sergeant OR First Sergeant</td>
+        <td>Senior Master Sergeant</td>
+        <td>Senior Chief Petty Officer</td>
+      </tr>
+      <tr>
+        <td>E9</td>
+        <td>Sergeant Major OR Command Sergeant Major</td>
+        <td>Master Chief Petty Officer OR Fleet/Command Master Chief Petty Officer</td>
+        <td>Sergent Major OR Master Gunnery Sergeant</td>
+        <td>Chief Master Sergeant OR First Sergeant</td>
+        <td>Chief Master Sergeant</td>
+        <td>Master Chief Petty Officer OR Fleet/Command Master Chief Petty Officer</td>
+      </tr>
+      <tr>
+        <th scope = "row" rowspan = "5" style="writing-mode:vertical-lr; transform: rotate(180deg);">Warrent Officers</th>
+        <td>W1</td>
+        <td>Warrant Officer</td>
+        <td>Warrant Officer</td>
+        <td>Warrant Officer</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+      </tr>
+      <tr>
+        <td>W2</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td>Chief Warrant Officer</td>
+      </tr>
+      <tr>
+        <td>W3</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td>Chief Warrant Officer</td>
+      </tr>
+      <tr>
+        <td>W4</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td>Chief Warrant Officer</td>
+      </tr>
+      <tr>
+        <td>W5</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td>Chief Warrant Officer</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+      </tr>
+      <tr>
+        <th rowspan="10" scope = "row" style="writing-mode:vertical-lr; transform: rotate(180deg);">Commissioned Officers</th>
+        <td>O1</td>
+        <td>Second Lieutenant</td>
+        <td>Ensign</td>
+        <td>Second Lieutenant</td>
+        <td>Second Lieutenant</td>
+        <td>Second Lieutenant</td>
+        <td>Ensign</td>
+      </tr>
+      <tr>
+        <td>O2</td>
+        <td>First Lieutenant</td>
+        <td>Lieutenant Junior Grade</td>
+        <td>First Lieutenant</td>
+        <td>First Lieutenant</td>
+        <td>First Lieutenant</td>
+        <td>Lieutenant Junior Grade</td>
+      </tr>
+      <tr>
+        <td>O3</td>
+        <td>Captain</td>
+        <td>Lieutenant</td>
+        <td>Captain</td>
+        <td>Captain</td>
+        <td>Captain</td>
+        <td>Lieutenant</td>
+      </tr>
+      <tr>
+        <td>O4</td>
+        <td>Major</td>
+        <td>Lieutenant Commander</td>
+        <td>Major</td>
+        <td>Major</td>
+        <td>Major</td>
+        <td>Lieutenant Commander</td>
+      </tr>
+      <tr>
+        <td>O5</td>
+        <td>Lieutenant Colonel</td>
+        <td>Commandar</td>
+        <td>Lieutenant Colonel</td>
+        <td>Lieutenant Colonel</td>
+        <td>Lieutenant Colonel</td>
+        <td>Commander</td>
+      </tr>
+      <tr>
+        <td>O6</td>
+        <td>Colonel</td>
+        <td>Captain</td>
+        <td>Colonel</td>
+        <td>Colonel</td>
+        <td>Colonel</td>
+        <td>Captain</td>
+      </tr>
+      <tr>
+        <td>O7</td>
+        <td>Brigadier General</td>
+        <td>Rear Admiral (Lower)</td>
+        <td>Brigadier General</td>
+        <td>Brigadier General</td>
+        <td>Brigadier General</td>
+        <td>Rear Admiral (Lower)</td>
+      </tr>
+      <tr>
+        <td>O8</td>
+        <td>Major General</td>
+        <td>Rear Admiral (Upper)</td>
+        <td>Major General</td>
+        <td>Major General</td>
+        <td>Major General</td>
+        <td>Rear Admiral (Upper)</td>
+      </tr>
+      <tr>
+        <td>O9</td>
+        <td>Lieutenant General</td>
+        <td>Vice Admiral</td>
+        <td>Lieutenant General</td>
+        <td>Lieutenant General</td>
+        <td>Lieutenant General</td>
+        <td>Vice Admiral</td>
+      </tr>
+      <tr>
+        <td>O10</td>
+        <td>General</td>
+        <td>Admiral</td>
+        <td>General</td>
+        <td>General</td>
+        <td>General</td>
+        <td>Admiral</td>
+      </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="8"><em>Note:</em> -- indicates that a pay grade is not used by a service branch</td>
+        </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
