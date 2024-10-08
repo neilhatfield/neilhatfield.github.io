@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <title>The PCIP System</title>
+    <meta name="author" content="Neil Hatfield" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body>
+  <style>
+    th {
+      background-color: #38693D;
+      color: white;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #EBF4E9;
+    }
+  </style>
+  <h1>The Plan-Code-Improve-Polish (PCIP) System</h1>
+  <p>This Plan-Code-Improve-Polish (PCIP) System is an approach that we can apply to any data analysis or programing project. The goal behind this system to help structure our thinking so that we can productively spend time rather than unproductively getting stuck and spinning our wheels. Check out each part of the system and what questions we might ask ourselves in general, in programming contexts, and when making data visualizations (both tables and plots).</p>
+  <h2>Plan</h2>
+  <ul>
+    <li>What is your goal? What are you trying to do?</li>
+    <li>What data do you need? What data do you have?</li>
+    <li>Is the data tidy? Do you need to tidy or otherwise wrangle the data?</li>
+    <li>Write out your steps/instructions.</li>
+  </ul>
+  <h3>Programming Contexts</h3>
+  <ul>
+    <li>What do you need in terms of nouns and verbs?</li>
+    <li>What do you have?</li>
+    <li>What steps do you need to work through so that the computer can help you reach your goal?</li>
+  </ul>
+  <h3>Data Visualizations</h3>
+  <ul>
+    <li>What steps do you need to carry out to create the visualization?</li>
+    <li>What kind of visualization do you want? What geometry (-ies) do you need?</li>
+    <li>Sketch what you're looking to create.</li>
+    <li>What goes into your Framework? Content? Labels?</li>
+    <li>How many layers do you need?</li>
+    <li>Do you need to use an interactive system to get started?</li>
+  </ul>
+  <h2>Code</h2>
+  <ul>
+    <li>Load necessary packages.</li>
+    <li>Import, tidy, and/or wrangle your data as needed.</li>
+  </ul>
+  <h3>Programming Contexts</h3>
+  <ul>
+    <li>Use comments to help you organize your code</li>
+    <li>Use your plan to help you write your code in a logical way.</li>
+    <li>If you are creating custom/new functions that you are going to re-use, define these first.</li>
+    <li>Store outputs as necessary in appropriate [new] objects</li>
+  </ul>
+  <h3>Data Visualizations</h3>
+  <ul>
+    <li>Using an interactive tool? (e.g., <code>esquisse::esquisser</code>)</li>
+    <ul>
+      <li>Launch that tool</li>
+      <li>Explore your data</li>
+      <li>Copy and save the code</li>
+    </ul>
+    <li>Plots/Graphics via <code>{ggplot2}</code></li>
+    <ul>
+      <li>Create the framework and specify the mappings</li>
+      <li>Create content (geometries, glyphs, aesthetics)</li>
+      <li>Create the labels (axes, gridlines, scales, legends, titles)</li>
+    </ul>
+    <li>Tables</li>
+    <ul>
+      <li>Use the right package for the job</li>
+      <ul>
+        <li><code>{janitor}</code> for frequency tables</li>
+        <li><code>{knitr}</code> and <code>{kableExtra}</code> for summary tables</li>
+        <li>If knitting to Word, use <code>{flextable}</code>.</li>
+      </ul>
+      <li>Identify what the rows and columns need to represent.</li>
+    </ul>
+  </ul>
+  <h2>Improve</h2>
+  <ul>
+    <li>Do this step at least once.</li>
+    <li>Run your code. Look at the console for any warnings or error messages.</li>
+    <li>Debug your code as needed.</li>
+    <li>Did you achieve your stated goal?</li>
+    <li><strong>Plan</strong> your modifications, then <strong>code</strong>.</li>
+  </ul>
+  <h3>Programming</h3>
+  <ul>
+    <li>Keep track of your bugs and how you fixed them.</li>
+    <li>Incorporate comments to help you make sense of your code in the future.</li>
+    <li>Critically look at your code.</li>
+    <li>Are you using meaningful names?</li>
+    <li>Are there any places where you can be more efficient?</li>
+  </ul>
+  <h3>Data Visualizations</h3>
+  <ul>
+    <li>Critically examine your visualization in terms of EPTs, Tufte's Principles of Analytical Design, and Kosslyn's Eight-fold Way.</li>
+    <li>What improvements can you make to your visualization?</li>
+    <li>Do you need to add or remove layers to highlight the message you want to convey?</li>
+    <li>Do you need to adjust glyph sizes and or add additional aesthetics to make the graph more readable?</li>
+    <li>Do your readers make sense of the visualization (and the data) in a way that is consistent (but not necessarily identical to) what you intended?</li>
+    <li>Did you make a “duck”?</li>
+  </ul>
+  <h2>Polish</h2>
+  <ul>
+    <li>Critically appraise your work.</li>
+    <li>How appealing is your work?</li>
+    <li>How easy of a time would someone (including your future self) have in understanding the work?</li>
+  </ul>
+  <h3>Programming</h3>
+  <ul>
+    <li>Look through your code again.</li>
+    <li>Did you use meaningful names?</li>
+    <li>How readable is your code?</li>
+    <li>Is your code consistently formatted?</li>
+    <li>Did you follow a coding Style Guide?</li>
+    <li>Where might you add additional comments to improve the readability and re-usability of your code in the future?</li>
+  </ul>
+  <h3>Data Visualizations</h3>
+  <ul>
+    <li>Check spelling and grammar of all parts of the visualization.</li>
+    <li>Double check that you have all key elements labeled.</li>
+    <li>Do you have a graph title or caption? Add one if not.</li>
+    <li>Did you set alt text for a plot/graph?</li>
+    <li>Check legibility. (E.g., Do you need to change font sizes?)</li>
+    <li>Do you have any vibrations, grids, or other chartjunk that need to be addressed/removed?</li>
+    <li>Are there any final improvements to be made to enhance the appeal of the plot in addition to the utility of the visualization?</li>
+  </ul>
+</body>
+</html>
