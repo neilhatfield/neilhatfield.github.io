@@ -3466,7 +3466,7 @@ window.Quarto = {
 </header>
 
 
-<p>This guide serves as a quick place to look for how to do different things when making Quarto documents. Keep in mind that part of Open Science is creating reproducible work. Quarto provides a great way to acheive that aim.</p>
+<p>This guide serves as a quick place to look for how to do different things when making Quarto documents. Keep in mind that part of Open Science is creating reproducible work. Quarto provides a great way to achieve that aim.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -3944,7 +3944,7 @@ Listing 8: Formatting a Code Chunk for R
 <span id="lst-exampleChunk-4"><a href="#lst-exampleChunk-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-cap: &quot;Formatting a Code Chunk for R&quot;</span></span>
 <span id="lst-exampleChunk-5"><a href="#lst-exampleChunk-5" aria-hidden="true" tabindex="-1"></a><span class="in">#| eval: false</span></span>
 <span id="lst-exampleChunk-6"><a href="#lst-exampleChunk-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="lst-exampleChunk-7"><a href="#lst-exampleChunk-7" aria-hidden="true" tabindex="-1"></a><span class="in"># A First Example Code Chunk</span></span>
+<span id="lst-exampleChunk-7"><a href="#lst-exampleChunk-7" aria-hidden="true" tabindex="-1"></a><span class="in"># A First Example Code Chunk ---</span></span>
 <span id="lst-exampleChunk-8"><a href="#lst-exampleChunk-8" aria-hidden="true" tabindex="-1"></a><span class="in">1 + 1</span></span>
 <span id="lst-exampleChunk-9"><a href="#lst-exampleChunk-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3986,7 +3986,7 @@ Important
 <h2 data-number="4.3" class="anchored" data-anchor-id="using-multiple-coding-languages"><span class="header-section-number">4.3</span> Using Multiple Coding Languages</h2>
 <p>One of the powerful aspects of Quarto documents is that they support multiple programming languages within the same document. Currently, Quarto supports R, Python, Julia, and Observable JavaScript for computations. Quarto also understands HTML, YAML, CSS, and SQL (via the <code>{knitr}</code> R package).</p>
 <p>Keep in mind that if you are going to use multiple programming languages in the same document, you <strong><em>must</em></strong> have the appropriate engines installed on your machine. That is, you need to have a Python installation if you plan to run Python code; R if you plan to run R code, etc.</p>
-<p>For Python, you’ll need to install the <code>jupyter</code> package. For details, check out the <a href="https://quarto.org/docs/computations/python.html">Using Python</a> page of Quarto <span class="citation" data-cites="usingpy">(<a href="#ref-usingpy" role="doc-biblioref"><em>Using Python</em>, n.d.</a>)</span>. You will also need to add the <code>key: value</code> pair <code>jupyter: python3</code> to your YAML header, as shown in <a href="#lst-yaml1" class="quarto-xref">Listing 1</a>.</p>
+<p>For Python, you’ll need to install the <code>jupyter</code> package. For details, check out the <a href="https://quarto.org/docs/computations/python.html">Using Python</a> page of Quarto <span class="citation" data-cites="usingpy">(<a href="#ref-usingpy" role="doc-biblioref"><em>Using Python</em>, n.d.</a>)</span>. You will also need to add the <code>key: value</code> pair <code>jupyter: python3</code> to your YAML header or to the code chunk as shown in <a href="#lst-python" class="quarto-xref">Listing 9</a>.</p>
 <p><a href="#lst-python" class="quarto-xref">Listing 9</a> shows an example code chunk that uses Python instead of R with in the Quarto document that makes this webpage.</p>
 <div class="cell" data-jupyter="python3">
 <div id="lst-python" class="cell-code listing quarto-float">
@@ -3999,7 +3999,7 @@ Listing 9: An example of a python code chunk
 <span id="lst-python-2"><a href="#lst-python-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| jupyter: python3</span></span>
 <span id="lst-python-3"><a href="#lst-python-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-label: lst-python</span></span>
 <span id="lst-python-4"><a href="#lst-python-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-cap: &quot;An example of a python code chunk&quot;</span></span>
-<span id="lst-python-5"><a href="#lst-python-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="lst-python-5"><a href="#lst-python-5" aria-hidden="true" tabindex="-1"></a><span class="in"># An example python code chunk ----</span></span>
 <span id="lst-python-6"><a href="#lst-python-6" aria-hidden="true" tabindex="-1"></a><span class="in">prefix = &quot;Stat&quot;</span></span>
 <span id="lst-python-7"><a href="#lst-python-7" aria-hidden="true" tabindex="-1"></a><span class="in">num = 184</span></span>
 <span id="lst-python-8"><a href="#lst-python-8" aria-hidden="true" tabindex="-1"></a></span>
@@ -4027,6 +4027,57 @@ Caution
 <p>Keep in mind that you still need to have all of the packages you need already installed <em>for all programming languages</em> you are using in a Quarto document. Additionally, there may still be instances where communication errors occur. Get in the habit of regularly testing and rendering the full document.</p>
 </div>
 </div>
+<div class="cell">
+<div id="lst-py2R" class="cell-code listing quarto-float">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-py2R-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing 10: Calling a Python Object in R Code Chunk
+</figcaption>
+<div aria-describedby="lst-py2R-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode cell-code" id="lst-py2R"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="lst-py2R-1"><a href="#lst-py2R-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="lst-py2R-2"><a href="#lst-py2R-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-label: lst-py2R</span></span>
+<span id="lst-py2R-3"><a href="#lst-py2R-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-cap: &quot;Calling a Python Object in R Code Chunk&quot;</span></span>
+<span id="lst-py2R-4"><a href="#lst-py2R-4" aria-hidden="true" tabindex="-1"></a><span class="in"># Example of Call Python object in R Chunk ----</span></span>
+<span id="lst-py2R-5"><a href="#lst-py2R-5" aria-hidden="true" tabindex="-1"></a><span class="in">library(reticulate)</span></span>
+<span id="lst-py2R-6"><a href="#lst-py2R-6" aria-hidden="true" tabindex="-1"></a><span class="in">capStatement &lt;- stringr::str_to_upper(py$statement)</span></span>
+<span id="lst-py2R-7"><a href="#lst-py2R-7" aria-hidden="true" tabindex="-1"></a><span class="in">print(capStatement)</span></span>
+<span id="lst-py2R-8"><a href="#lst-py2R-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="lst-py2R-9"><a href="#lst-py2R-9" aria-hidden="true" tabindex="-1"></a><span class="in"># Create new R objects for next example ----</span></span>
+<span id="lst-py2R-10"><a href="#lst-py2R-10" aria-hidden="true" tabindex="-1"></a><span class="in">mainPart &lt;- runif(n = 5, min = 50, max = 80)</span></span>
+<span id="lst-py2R-11"><a href="#lst-py2R-11" aria-hidden="true" tabindex="-1"></a><span class="in">errorPart &lt;- rnorm(n = 5, mean = 0, sd = 1)</span></span>
+<span id="lst-py2R-12"><a href="#lst-py2R-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] &quot;WELCOME TO STAT 184!&quot;</code></pre>
+</div>
+</div>
+<p>In <a href="#lst-py2R" class="quarto-xref">Listing 10</a>, you’ll notice that we needed to load the <code>{reticulate}</code> R package. This package needs to be loaded just once in your Quarto document to facilitate passing objects between the two languages.</p>
+<div class="cell" data-jupyter="python3">
+<div id="lst-R2py" class="cell-code listing quarto-float">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-R2py-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing 11: Calling R Objects in Python Code Chunk
+</figcaption>
+<div aria-describedby="lst-R2py-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode cell-code" id="lst-R2py"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="lst-R2py-1"><a href="#lst-R2py-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="lst-R2py-2"><a href="#lst-R2py-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| jupyter: python3</span></span>
+<span id="lst-R2py-3"><a href="#lst-R2py-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-label: lst-R2py</span></span>
+<span id="lst-R2py-4"><a href="#lst-R2py-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-cap: &quot;Calling R Objects in Python Code Chunk&quot;</span></span>
+<span id="lst-R2py-5"><a href="#lst-R2py-5" aria-hidden="true" tabindex="-1"></a><span class="in"># Example of Calling R objects in Python ----</span></span>
+<span id="lst-R2py-6"><a href="#lst-R2py-6" aria-hidden="true" tabindex="-1"></a><span class="in">newValues = [sum(x) for x in zip(r.mainPart, r.errorPart)]</span></span>
+<span id="lst-R2py-7"><a href="#lst-R2py-7" aria-hidden="true" tabindex="-1"></a><span class="in">roundedValues = [round(x, 3) for x in newValues]</span></span>
+<span id="lst-R2py-8"><a href="#lst-R2py-8" aria-hidden="true" tabindex="-1"></a><span class="in">print(roundedValues)</span></span>
+<span id="lst-R2py-9"><a href="#lst-R2py-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[63.687, 73.479, 72.811, 67.564, 73.369]</code></pre>
+</div>
+</div>
+<p>Similarly, we can access and work with R objects in Python chunks (see <a href="#lst-R2py" class="quarto-xref">Listing 11</a>).</p>
 </section>
 </section>
 <section id="tables-and-figures" class="level1" data-number="5">
@@ -4034,12 +4085,12 @@ Caution
 <p>As you create reproducible analyses, you’ll want to incorporate data visualizations. This includes tables and figures (plots, graphs, images). You can make use of the code you’ve learned this semester inside Quarto documents. The new aspect is to capitalize on the appropriate code chunk options to take your visualizations to the next level.</p>
 <section id="tables" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="tables"><span class="header-section-number">5.1</span> Tables</h2>
-<p>To demonstrate making a table, I’m going to use the Diamond Summary Table. If you look in the Code Appendix, you’ll find the code to wrangle the Diamonds data <span class="citation" data-cites="wickhamDiamonds2015">(<a href="#ref-wickhamDiamonds2015" role="doc-biblioref">Wickham, 2015</a>)</span> but that code doesn’t appear in the body of this guide. <a href="#lst-table1" class="quarto-xref">Listing 10</a> shows the code block for creating a table in a Quarto document.</p>
+<p>To demonstrate making a table, I’m going to use the Diamond Summary Table. If you look in the Code Appendix, you’ll find the code to wrangle the Diamonds data <span class="citation" data-cites="wickhamDiamonds2015">(<a href="#ref-wickhamDiamonds2015" role="doc-biblioref">Wickham, 2015</a>)</span> but that code doesn’t appear in the body of this guide. <a href="#lst-table1" class="quarto-xref">Listing 12</a> shows the code block for creating a table in a Quarto document.</p>
 <div class="cell" data-tbl-pos="H">
 <div id="lst-table1" class="cell-code listing quarto-float">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing 10: Code Chunk for Making Table
+Listing 12: Code Chunk for Making Table
 </figcaption>
 <div aria-describedby="lst-table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="lst-table1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="lst-table1-1"><a href="#lst-table1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
@@ -4049,7 +4100,7 @@ Listing 10: Code Chunk for Making Table
 <span id="lst-table1-5"><a href="#lst-table1-5" aria-hidden="true" tabindex="-1"></a><span class="in">#| html-table-processing: none</span></span>
 <span id="lst-table1-6"><a href="#lst-table1-6" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-label: lst-table1</span></span>
 <span id="lst-table1-7"><a href="#lst-table1-7" aria-hidden="true" tabindex="-1"></a><span class="in">#| lst-cap: &quot;Code Chunk for Making Table&quot;</span></span>
-<span id="lst-table1-8"><a href="#lst-table1-8" aria-hidden="true" tabindex="-1"></a><span class="in"># Make table ----</span></span>
+<span id="lst-table1-8"><a href="#lst-table1-8" aria-hidden="true" tabindex="-1"></a><span class="in"># Make Diamond Summary Table ----</span></span>
 <span id="lst-table1-9"><a href="#lst-table1-9" aria-hidden="true" tabindex="-1"></a><span class="in">summaryWidth %&gt;%</span></span>
 <span id="lst-table1-10"><a href="#lst-table1-10" aria-hidden="true" tabindex="-1"></a><span class="in">  kable(</span></span>
 <span id="lst-table1-11"><a href="#lst-table1-11" aria-hidden="true" tabindex="-1"></a><span class="in">    digits = 2,</span></span>
@@ -4170,7 +4221,7 @@ Table 1: Summary Statistics on Diamond Width by Cut
 </figure>
 </div>
 </div>
-<p>There a couple of items to notice in <a href="#lst-table1" class="quarto-xref">Listing 10</a>. First, the first two chunk options, <code>label</code> and <code>tbl-cap</code> are absolutely necessary if you want to be to cross-reference your tables. The value for <code>label</code> <strong>MUST</strong> begin with <code>tbl-</code>. The value for <code>tbl-caption</code> would be what you would have put as the value for the <code>caption</code> argument in the <code>kable</code> call. You do not need both. When using the <code>{kableExtra}</code> package, it is a good practice to also use the code chunk option <code>html-table-processing: none</code>. This will keep Quarto from trying to re-process the table, which can lead to odd or wonky looking tables.</p>
+<p>There a couple of items to notice in <a href="#lst-table1" class="quarto-xref">Listing 12</a>. First, the first two chunk options, <code>label</code> and <code>tbl-cap</code> are absolutely necessary if you want to be to cross-reference your tables. The value for <code>label</code> <strong>MUST</strong> begin with <code>tbl-</code>. The value for <code>tbl-caption</code> would be what you would have put as the value for the <code>caption</code> argument in the <code>kable</code> call. You do not need both. When using the <code>{kableExtra}</code> package, it is a good practice to also use the code chunk option <code>html-table-processing: none</code>. This will keep Quarto from trying to re-process the table, which can lead to odd or wonky looking tables.</p>
 <p>When rendering the HTML, your tables will appear in same relative place in the document as the creating code chunk. The same isn’t true when you render to paginated documents (PDFs or Word). By default, Quarto’s engine will attempt to place the table (or figure) as close the relative location of the code chunk as possible but the table and and figure may end up on another page. To override this and “force” Quarto to put the table where you want, you can use the <code>tbl-pos: H</code> chunk option (tbl-pos for “table position” and H for “Here!”). Keep in mind that this option will be ignored if space that is “here” isn’t large enough for your table.</p>
 </section>
 <section id="figures" class="level2" data-number="5.2">
@@ -4180,7 +4231,7 @@ Table 1: Summary Statistics on Diamond Width by Cut
 <div id="lst-figure1" class="cell-code listing quarto-float">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-figure1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing 11: Code Chunk for Making a Figure
+Listing 13: Code Chunk for Making a Figure
 </figcaption>
 <div aria-describedby="lst-figure1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="lst-figure1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="lst-figure1-1"><a href="#lst-figure1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
@@ -4224,7 +4275,7 @@ Listing 11: Code Chunk for Making a Figure
 </figure>
 </div>
 <div class="cell-output-display">
-<div id="fig-namesPlot" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-pos="H" alt="Line graph showing popularity of four names over time">
+<div id="fig-namesPlot" class="quarto-figure quarto-figure-center quarto-float anchored" alt="Line graph showing popularity of four names over time" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-namesPlot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure 1: Popularity of the Stat 184 Instructor’s First Names Over Time
@@ -4255,8 +4306,8 @@ Figure 1: Popularity of the Stat 184 Instructor’s First Names Over Time
   <li>The line for Padma is the smallest line and only begins in 1968. The line is relatively flat throughout time.</li>
   </ul>
 </details>
-<p><a href="#lst-figure1" class="quarto-xref">Listing 11</a> shows an example code chunk for making a figure. Notice that the first option is <code>label</code> and that the value starts with <code>fig-</code>. This will allow me to reference this plot in the body of my document. The <code>fig-cap</code> option is what sets the caption. If you used the <code>title</code> argument of the <code>labs</code> function, you would move the text string from <code>title</code> to <code>tbl-cap</code>. There is no need to use both a caption and a title.</p>
-<p>Similar to tables, when you render to PDF or Word (or other formats with actual pages), Quarto will occasionally move the figure around. The <code>fig-pos</code> option will override this just like <code>tbl-pos</code> does. The other two options to play around with are <code>fig-height</code> and <code>fig-width</code>. These control the height and width of the figure, respectively. The number given is interpreted as a number of inches. You’ll notice in <a href="#lst-figure1" class="quarto-xref">Listing 11</a> that I only specified <code>fig-height</code>. I recommend that you only set <em>one</em> of height or width and let the computer scale the other dimension. This will help keep your figure from getting stretched/squished in weird ways if you attempt to set both.</p>
+<p><a href="#lst-figure1" class="quarto-xref">Listing 13</a> shows an example code chunk for making a figure. Notice that the first option is <code>label</code> and that the value starts with <code>fig-</code>. This will allow me to reference this plot in the body of my document. The <code>fig-cap</code> option is what sets the caption. If you used the <code>title</code> argument of the <code>labs</code> function, you would move the text string from <code>title</code> to <code>tbl-cap</code>. There is no need to use both a caption and a title.</p>
+<p>Similar to tables, when you render to PDF or Word (or other formats with actual pages), Quarto will occasionally move the figure around. The <code>fig-pos</code> option will override this just like <code>tbl-pos</code> does. The other two options to play around with are <code>fig-height</code> and <code>fig-width</code>. These control the height and width of the figure, respectively. The number given is interpreted as a number of inches. You’ll notice in <a href="#lst-figure1" class="quarto-xref">Listing 13</a> that I only specified <code>fig-height</code>. I recommend that you only set <em>one</em> of height or width and let the computer scale the other dimension. This will help keep your figure from getting stretched/squished in weird ways if you attempt to set both.</p>
 <p>The next two options, <code>fig-alt</code> and <code>aria-describedby</code> are strictly for HTML outputs. (They will be ignored when rendering to anything else.) When creating a web files, you should <em>always</em> include Alt Text on visualizations. You can learn more about <a href="https://accessibility.psu.edu/images/alttext/">Alt Text at Penn State’s Accessibility page</a> <span class="citation" data-cites="imageal2014"><em>Image ALT Text</em> (<a href="#ref-imageal2014" role="doc-biblioref">2014</a>)</span>. The <code>aria-describedby</code> option creates a connection between the plot and the long description collapsible text that appears below the plot. You can learn more about <a href="https://accessibility.psu.edu/images/longdescription/">Long Descriptions at Penn State’s Accessibility page</a> <span class="citation" data-cites="longdes2015"><em>Long Description</em> (<a href="#ref-longdes2015" role="doc-biblioref">2015</a>)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4275,7 +4326,7 @@ Note
 </section>
 <section id="cross-referencing" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Cross-referencing</h1>
-<p>Cross-referencing <span class="citation" data-cites="crossre"><em>Cross References</em> (<a href="#ref-crossre" role="doc-biblioref">n.d.</a>)</span> is the act of referring to an object in your document by a linked name. If you’ve read a text and come across sentences such as “See Figure 1” or “as shown in Table 3.2”, you’ve read sentences the incorporate cross-referencing. Multiple document systems will help you do cross-referencing including Microsoft Word, LaTeX, and Quarto. It is often best to let those systems handle cross-referencing rather than you attempt to do it by hand. The computer is pretty good (better than us) at the tedious aspect of keeping the number all sorted.</p>
+<p>Cross-referencing is the act of referring to an object in your document by a linked name <span class="citation" data-cites="crossre">(<a href="#ref-crossre" role="doc-biblioref"><em>Cross References</em>, n.d.</a>)</span>. If you’ve read a text and come across sentences such as “See Figure 1” or “as shown in Table 3.2”, you’ve read sentences the incorporate cross-referencing. Multiple document systems will help you do cross-referencing including Microsoft Word, LaTeX, and Quarto. It is often best to let those systems handle cross-referencing rather than you attempt to do it by hand. The computer is pretty good (better than us) at the tedious aspect of keeping the number all sorted.</p>
 <section id="sec-setElements" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="sec-setElements"><span class="header-section-number">6.1</span> Setting Up Elements</h2>
 <p>The first thing that you have to do if you want to cross-reference elements is you have to make sure that each element you want is <strong><em>uniquely named</em></strong>. For Tables and Figures, this is where the <code>label</code> code chunk option comes into play. For code chunks, you’ll use the <code>lst-label</code> option.</p>
@@ -4339,15 +4390,28 @@ Tip
 </ul></li>
 </ul>
 <p>The key to adding a reference to your narrative text is to use the at-sign, @, followed by the citation’s id, just like a cross-reference. Enclosing the cross-reference in square brackets will use the parenthetical style, otherwise you’ll get in-text style.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Be careful when switching back-and-forth between the Source and Visual editor views in RStudio Desktop. Because the Visual editor attempts to render certain elements (e.g., mathematics, divisions surrounded by triple-colons–<code>:::</code>), you might find that some of your code appear “hashed” or altered.</p>
+</div>
+</div>
 </section>
 <section id="the-references-section" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="the-references-section"><span class="header-section-number">7.4</span> The References Section</h2>
 <p>The last piece for working with references in your reports is to add a Reference Sections (a.k.a. Works Cited or Bibliography). This generally goes at the end of your document and before any appendices. Quarto will automatically build this portion of your document for you if you have used the citations.</p>
-<p>To control the location of the references section you’ll want to include the following code (<a href="#lst-refs" class="quarto-xref">Listing 12</a>) in your Quarto document.</p>
+<p>To control the location of the references section you’ll want to include the following code (<a href="#lst-refs" class="quarto-xref">Listing 14</a>) in your Quarto document.</p>
 <div id="lst-refs" class="listing quarto-float">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-refs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing 12: Quarto Commands for Making a Reference Section
+Listing 14: Quarto Commands for Making a Reference Section
 </figcaption>
 <div aria-describedby="lst-refs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p>{{&lt; pagebreak &gt;}}<br>
@@ -4357,17 +4421,17 @@ Listing 12: Quarto Commands for Making a Reference Section
 </div>
 </figure>
 </div>
-<p>In the first line of <a href="#lst-refs" class="quarto-xref">Listing 12</a> will give you a command that will put a page break into your rendered document before starting the references section. You can change the text in the second line from “References” to “Works Cited”, “Bibliography”, or whatever term is appropriate for your chosen writing/citation style. The third and fourth lines should appear as they do in <a href="#lst-refs" class="quarto-xref">Listing 12</a>.</p>
+<p>In the first line of <a href="#lst-refs" class="quarto-xref">Listing 14</a> will give you a command that will put a page break into your rendered document before starting the references section. You can change the text in the second line from “References” to “Works Cited”, “Bibliography”, or whatever term is appropriate for your chosen writing/citation style. The third and fourth lines should appear as they do in <a href="#lst-refs" class="quarto-xref">Listing 14</a>.</p>
 </section>
 </section>
 <section id="sec-makeCA" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Creating a Code Appendix</h1>
 <p>One of the greatest powers of Quarto is that it can automatically create an appendix of all of your code chunks. This helps keep your work transparent without cluttering the body of your report with distracting code.</p>
-<p><a href="#lst-codeApp" class="quarto-xref">Listing 13</a> shows how you can create a code appendix automatically.</p>
+<p><a href="#lst-codeApp" class="quarto-xref">Listing 15</a> shows how you can create a code appendix automatically.</p>
 <div id="lst-codeApp" class="listing quarto-float">
 <figure class="quarto-float quarto-float-lst figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-codeApp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Listing 13: Code Chunk for Creating Code Appendix
+Listing 15: Code Chunk for Creating Code Appendix
 </figcaption>
 <div aria-describedby="lst-codeApp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <p>{{&lt; pagebreak &gt;}}<br>
@@ -4415,102 +4479,116 @@ Wickham, H. (2015). <em>Diamonds</em> (Version 3.5.1) [Dataset]. {ggplot2} R pac
 <section id="code-appendix" class="level1" data-number="10">
 <h1 data-number="10"><span class="header-section-number">10</span> Code Appendix</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tinytex&quot;</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tinytex)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install_tinytex</span>()</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># A First Example Code Chunk</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>prefix <span class="ot">=</span> <span class="st">&quot;Stat&quot;</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>num <span class="ot">=</span> <span class="dv">184</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>statement <span class="ot">=</span> <span class="st">&quot;Welcome to {} {}!&quot;</span><span class="fu">.format</span>(prefix, num)</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(statement)</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Packages ----</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Data ----</span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(diamonds)</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Summarize the diamonds data ----</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>summaryWidth <span class="ot">&lt;-</span> diamonds <span class="sc">%&gt;%</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(cut) <span class="sc">%&gt;%</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(cut, y) <span class="sc">%&gt;%</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(y <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">count =</span> <span class="fu">n</span>(),</span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">minimum =</span> <span class="fu">min</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">firstQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.2</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">secondQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.4</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">median =</span> <span class="fu">median</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">thirdQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.6</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">fourthQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.8</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">max =</span> <span class="fu">max</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">SAM =</span> <span class="fu">mean</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">SASD =</span> <span class="fu">sd</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Make table ----</span></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>summaryWidth <span class="sc">%&gt;%</span></span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(</span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">digits =</span> <span class="dv">2</span>,</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;Cut Quality&quot;</span>, <span class="st">&quot;Freq.&quot;</span>, <span class="st">&quot;Min&quot;</span>, <span class="st">&quot;20%-tile&quot;</span>, <span class="st">&quot;40%-tile&quot;</span>, <span class="st">&quot;Median&quot;</span>,</span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;60%-tile&quot;</span>, <span class="st">&quot;80%-tile&quot;</span>, <span class="st">&quot;Max&quot;</span>, <span class="st">&quot;SAM&quot;</span>, <span class="st">&quot;SASD&quot;</span>),</span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">format.args =</span> <span class="fu">list</span>(<span class="at">big.mark =</span> <span class="st">&quot;,&quot;</span>),</span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">align =</span> <span class="st">&quot;lcccccccccc&quot;</span></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_footnote</span>(</span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">c</span>(<span class="st">&quot;Width was measured in milimeters.&quot;</span>),</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    <span class="at">notation =</span> <span class="st">&quot;none&quot;</span>,</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">threeparttable =</span> <span class="cn">TRUE</span></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data ----</span></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&quot;BabyNames&quot;</span>, <span class="at">package =</span> <span class="st">&quot;dcData&quot;</span>)</span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a><span class="co"># Wrangle Data ----</span></span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="do">## Selected names</span></span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>instructors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Abby&quot;</span>, <span class="st">&quot;Edward&quot;</span>, <span class="st">&quot;Padma&quot;</span>, <span class="st">&quot;Neil&quot;</span>)</span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a><span class="do">## Subset and construct counts</span></span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>subsetNames <span class="ot">&lt;-</span> BabyNames <span class="sc">%&gt;%</span></span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(name <span class="sc">%in%</span> instructors) <span class="sc">%&gt;%</span></span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(name, year) <span class="sc">%&gt;%</span></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">total =</span> <span class="fu">sum</span>(count),</span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span></span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Set Color Palette ----</span></span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>psuPalette <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#1E407C&quot;</span>, <span class="st">&quot;#BC204B&quot;</span>, <span class="st">&quot;#3EA39E&quot;</span>, <span class="st">&quot;#E98300&quot;</span>,</span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>                <span class="st">&quot;#999999&quot;</span>, <span class="st">&quot;#AC8DCE&quot;</span>, <span class="st">&quot;#F2665E&quot;</span>, <span class="st">&quot;#99CC00&quot;</span>)</span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a><span class="co"># Make Data Visualization ----</span></span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> subsetNames,</span>
-<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> total, <span class="at">color =</span> name, <span class="at">linetype =</span> name)</span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
-<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
-<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Year&quot;</span>,</span>
-<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Total Number of People with Name&quot;</span>,</span>
-<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Name&quot;</span>,</span>
-<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>    <span class="at">linetype =</span> <span class="st">&quot;Name&quot;</span></span>
-<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>),</span>
-<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="dv">1</span>, <span class="st">&#39;cm&#39;</span>)</span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> </span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(</span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> psuPalette</span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
-<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fl">0.01</span>)</span>
-<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tinytex&quot;</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tinytex)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install_tinytex</span>()</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># A First Example Code Chunk ---</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># An example python code chunk ----</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>prefix <span class="ot">=</span> <span class="st">&quot;Stat&quot;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>num <span class="ot">=</span> <span class="dv">184</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>statement <span class="ot">=</span> <span class="st">&quot;Welcome to {} {}!&quot;</span><span class="fu">.format</span>(prefix, num)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(statement)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of Call Python object in R Chunk ----</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>capStatement <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_to_upper</span>(py<span class="sc">$</span>statement)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(capStatement)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Create new R objects for next example ----</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>mainPart <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">5</span>, <span class="at">min =</span> <span class="dv">50</span>, <span class="at">max =</span> <span class="dv">80</span>)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>errorPart <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">5</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of Calling R objects in Python ----</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>newValues <span class="ot">=</span> [<span class="fu">sum</span>(x) <span class="cf">for</span> x <span class="cf">in</span> <span class="fu">zip</span>(r.mainPart, r.errorPart)]</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>roundedValues <span class="ot">=</span> [<span class="fu">round</span>(x, <span class="dv">3</span>) <span class="cf">for</span> x <span class="cf">in</span> newValues]</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(roundedValues)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Packages ----</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Data ----</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(diamonds)</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Summarize the diamonds data ----</span></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>summaryWidth <span class="ot">&lt;-</span> diamonds <span class="sc">%&gt;%</span></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(cut) <span class="sc">%&gt;%</span></span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(cut, y) <span class="sc">%&gt;%</span></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(y <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">count =</span> <span class="fu">n</span>(),</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">minimum =</span> <span class="fu">min</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">firstQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.2</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">secondQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.4</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">median =</span> <span class="fu">median</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">thirdQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.6</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">fourthQuin =</span> <span class="fu">quantile</span>(y, <span class="at">probs =</span> <span class="fl">0.8</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">max =</span> <span class="fu">max</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">SAM =</span> <span class="fu">mean</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">SASD =</span> <span class="fu">sd</span>(y, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a><span class="co"># Make Diamond Summary Table ----</span></span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>summaryWidth <span class="sc">%&gt;%</span></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(</span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">digits =</span> <span class="dv">2</span>,</span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;Cut Quality&quot;</span>, <span class="st">&quot;Freq.&quot;</span>, <span class="st">&quot;Min&quot;</span>, <span class="st">&quot;20%-tile&quot;</span>, <span class="st">&quot;40%-tile&quot;</span>, <span class="st">&quot;Median&quot;</span>,</span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>                  <span class="st">&quot;60%-tile&quot;</span>, <span class="st">&quot;80%-tile&quot;</span>, <span class="st">&quot;Max&quot;</span>, <span class="st">&quot;SAM&quot;</span>, <span class="st">&quot;SASD&quot;</span>),</span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">format.args =</span> <span class="fu">list</span>(<span class="at">big.mark =</span> <span class="st">&quot;,&quot;</span>),</span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">align =</span> <span class="st">&quot;lcccccccccc&quot;</span></span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_footnote</span>(</span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">c</span>(<span class="st">&quot;Width was measured in milimeters.&quot;</span>),</span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">notation =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>    <span class="at">threeparttable =</span> <span class="cn">TRUE</span></span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Data ----</span></span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&quot;BabyNames&quot;</span>, <span class="at">package =</span> <span class="st">&quot;dcData&quot;</span>)</span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Wrangle Data ----</span></span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a><span class="do">## Selected names</span></span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a>instructors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Abby&quot;</span>, <span class="st">&quot;Edward&quot;</span>, <span class="st">&quot;Padma&quot;</span>, <span class="st">&quot;Neil&quot;</span>)</span>
+<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a><span class="do">## Subset and construct counts</span></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a>subsetNames <span class="ot">&lt;-</span> BabyNames <span class="sc">%&gt;%</span></span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(name <span class="sc">%in%</span> instructors) <span class="sc">%&gt;%</span></span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(name, year) <span class="sc">%&gt;%</span></span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">total =</span> <span class="fu">sum</span>(count),</span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span></span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a><span class="co"># Set Color Palette ----</span></span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a>psuPalette <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#1E407C&quot;</span>, <span class="st">&quot;#BC204B&quot;</span>, <span class="st">&quot;#3EA39E&quot;</span>, <span class="st">&quot;#E98300&quot;</span>,</span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>                <span class="st">&quot;#999999&quot;</span>, <span class="st">&quot;#AC8DCE&quot;</span>, <span class="st">&quot;#F2665E&quot;</span>, <span class="st">&quot;#99CC00&quot;</span>)</span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a><span class="co"># Make Data Visualization ----</span></span>
+<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
+<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> subsetNames,</span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> total, <span class="at">color =</span> name, <span class="at">linetype =</span> name)</span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Year&quot;</span>,</span>
+<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Total Number of People with Name&quot;</span>,</span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Name&quot;</span>,</span>
+<span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a>    <span class="at">linetype =</span> <span class="st">&quot;Name&quot;</span></span>
+<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>),</span>
+<span id="cb6-103"><a href="#cb6-103" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="dv">1</span>, <span class="st">&#39;cm&#39;</span>)</span>
+<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> </span>
+<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb6-106"><a href="#cb6-106" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> psuPalette</span>
+<span id="cb6-107"><a href="#cb6-107" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb6-108"><a href="#cb6-108" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fl">0.01</span>)</span>
+<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 
