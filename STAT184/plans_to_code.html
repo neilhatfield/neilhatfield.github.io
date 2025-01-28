@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <title>Transitioning from Plans to Code</title>
+    <meta name="author" content="Neil Hatfield" />
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    </script>
+</head>
+
+<body>
+    <style>
+        h1 {font-size: 2.5em;}
+        h2 {font-size: 2.25em;}
+        h3 {font-size: 2em;}
+        p {font-size: 1.5em;}
+        pre {font-size: 1.5em;}
+        li {font-size: 1.4em;}
+        .two-cols {
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        .two-cols>* {
+            padding: 1rem;
+            border-right: 2px solid black;
+        }
+    </style>
+    <h1>Transitioning from Plans to Code</h1>
+    <p>
+        In the PCIP System, we first create a plan that details our goal(s), needs, and the steps to take to achieve our goals. Once we have a plan, we can move to coding. The transition from plan to code can be a difficult place to be in. Often times, this is where programmers lose sight of their goal as they start to ignore their plan and focus too much on the details of their code.
+    </p>
+    <p>
+        One approach we can take to help us avoid such pitfalls is to create a transition document instead of immediately starting coding. A transition document lives in-between our written plan and the first completed script. We create a transition document but first opening up a blank script file. We then begin to add comments to the script file that correspond to our plan. These comments create a structure to help us stay organized and not lose sight of our plan while we code. Once we have the transition document created, we can then fill in the transition document with our code to create the initial script.
+    </p>
+    <h2>Example</h2>
+    <p>
+        To help us get a sense of this, we can look at an example of a plan, transition document, and initial script for the height of a gummy bear problem from class. As a recap, here is an example plan for this context.
+    </p>
+    <h3>A Plan for Gummy Bear's Height Problem</h3>
+    <p><strong>Goal:</strong> Create a function that will tell me how high above the ground in centimeters a
+        gummy bear is after a certain number of seconds have elapsed since launching the gummy bear from a
+        spoonapult.</p>
+    <p><strong>Needs:</strong> We will need the formula for telling us the height above the ground after some amount of elappsed time. For that formula we will need to know the acceleration due to Earth's gravity, the initial velocity of the gummy bear at launch, the initial height above the ground of the gummy bear at launch, and some way to represent the elapsed time since launch in seconds.</p>
+    <p><strong>Steps:</strong> We will need to take the following steps.</p>
+    <ol>
+        <li>Look Up Information</li>
+        <ul>
+            <li>Formula relating initial height, initial velocoity, acceleration due to gravity, and elapsed time: \(h=\frac{1}{2}a*time^2+v_0*time+h_0\)</li>
+            <li>Acceleration due to Earth's gravity: -980.665 cm/sec/sec</li>
+            <li>Initial velocity of gummy bear: one estimate provided by Neil was 350 cm/sec</li>
+            <li>Initial height above the ground: one estimate provided by Neil was 71 cm</li>
+        </ul>
+        <li>Create Noun Objects</li>
+        <ul>
+            <li>Decide on what should be constants, parameters, and variables</li>
+            <li>Create these objects</li>
+        </ul>
+        <li>Create the Function</li>
+        <ul>
+            <li>Pick a name</li>
+            <li>Set inputs/arguments</li>
+            <li>Write rule</li>
+        </ul>
+        <li>Test the Function</li>
+    </ol>
+    <p>
+        Now that we've seen the plan, we can take a look at the transition document and the initial script in a side-by-side layout. Notice that the transition document follows the structure of our plan. We used four dashes at the end of first-level comments (i.e., <code>----</code>) to create headers (and entries in the auto-outline). We used second-level comments (starting with two hashtags, <code>##</code>) to move key information from our plan to our scripting environment. Notice that we left extra space between different sections of our document; this helps to provide a bit of a buffer as we come back and work.
+    </p>
+    <div class="two-cols">
+        <div>
+            <h3>Transition Document</h3>
+            <pre># Gummy Bear's Height Function ----
+## Goal: Create a function that will tell us the height
+## of a gummy bear above the ground any number of seconds 
+## after being launch from a spoonapult
+
+
+
+# Key Elements (needs) ----
+## accel: -980.665 cm/sec/sec
+## initial velocity: 350 cm/sec
+## initial height: 71 cm
+## elapsed time: seconds
+ 
+
+
+# Define Function ----
+## Pick Name
+## List inputs/arguments
+## 1/2*accel*time^2 + initial vel * time + initial height
+      
+
+
+# Test Function ----
+                </pre>
+        </div>
+        <div>
+            <h3>Initial Code</h3>
+            <pre># Gummy Bear's Height Function ----
+## Goal: Create a function that will tell us the height
+## of a gummy bear above the ground any number of seconds 
+## after being launch from a spoonapult
+
+# Key Elements (needs) ----
+## initial velocity: 350 cm/sec, parameter intVel
+## initial height: 71 cm, parameter intHeight
+## elapsed time: seconds, variable t
+
+# Define Function ----
+findHeight <- function(t, intVel = 350, intHeight = 71) {
+  h <- 0.5*(-980.665)*t^2 + intVel*t + intHeight
+  return(h)
+}
+
+# Test Function ----
+findHeight(t = 0.5) # should be 123.4169 cm</pre>
+        </div>
+    </div>
+    <p>
+        After completing the transition document, we can then go back to the top and start the coding process. Notice that the acceleration comment is gone; this is the result of us deciding to list this as a fixed, hard-coded value in our function. We also opted to define two parameters for the initial velocity and height values, using the provided values as their defaults. We also choose to use t as our variable to represent elapsed time.
+    </p>
+    <p>
+        Notice that we've replaced all of the comments in the Define Function section of our transition document. This is because we've carried those sub-steps out to create our function. We picked a name (<code>findHeight</code>), listed our variables (<code>t</code>) and parameters (<code>intVel, intHeight</code>), and used the formula as the rule of our function. We also added a test case.
+    </p>
+    <h2>A Note on Polished Code</h2>
+    <p>We want to point out that the script shown as the Initial Code is <em>initial code</em>. That is to say, that there are additional things we could do in this script to make our function fully polished. A more polished version of our script might look something like the following, which is set up using <code>roxygen</code> style to create a documentation file for the function. <em>Note: you are not expected to generate scripts like this in Stat 184.</em></p>
+    <pre>
+#' Calculate a Gummy Bear's Height Above the Ground
+#'
+#' @description
+#' `findHeight` returns the height of a gummy bear above the ground
+#'
+#' @details
+#' This function returns the height of a gummy bear in centimeters above the
+#' ground after being launched out of a simple catapult made from craft sticks,
+#' rubber bands, and a plastic spoon (a.k.a. a spoonapult). The function draws
+#' upon the basic protectile motion formula and is set to Earth's gravity.
+#'
+#' @param t The elapsed time in seconds since launch
+#' @param intVel The initial velocity at launch in cm/sec
+#' @param intHeight The initial height above the ground at launch in centimeters
+#'
+#' @return The height above the ground
+#' @export
+findHeight <- function(t, intVel = 350, intHeight = 71) {
+  h <- 0.5*(-980.665)*t^2 + intVel*t + intHeight
+  return(h)
+}
+
+#'
+#' @examples
+findHeight(t = 0.5) # should be 123.4169 cm
+findHeight(t = 0.002, intVel = 200, intHeight = 50) # should be 50.39804
+
+    </pre>
+</body>
+</html>
