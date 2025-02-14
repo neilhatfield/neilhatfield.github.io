@@ -445,3 +445,17 @@ dt {
 	font-size: 1.1rem;
 	font-weight: 700;
 }
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+
+.grid-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
