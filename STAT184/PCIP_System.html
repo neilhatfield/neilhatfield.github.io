@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <title>The PCIP System</title>
+    <link media="screen,projection" type="text/css" href="1_Scripts/neil.css" rel="stylesheet" />
+    <meta name="author" content="Neil Hatfield" />
+    <meta name="keywords" content="Stat184, PCIP, Plan-Code-Improve-Polish" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="innerwrapper">
+      <div id="header">
+        <h1 style="text-align: center;">The Plan-Code-Improve-Polish (PCIP) System</h1>
+        <br/>
+        <div align="center">
+          <img class="noborder" alt="PCIP Logo" src="1_Images/pcip_logo.jpg"
+          style="height: 400px;" />
+        </div>
+      </div>
+      <div id="contentnobars">
+        <p>This Plan-Code-Improve-Polish (PCIP) System is an approach that we can apply to any data analysis or programing project. The goal behind this system to help structure our thinking so that we can spend our time productively rather than getting stuck and spinning our wheels. Check out each part of the system and what questions we might ask ourselves in general, in programming contexts, and when making data visualizations (both tables and plots).</p>
+        <h2>Plan</h2>
+        <p>
+          Planning is the <em><strong>most</strong></em> important step we can take. This is where we will articulate what we are ultimately trying to do. Keep in mind that good plans include the following three core elements and one optional element.
+        </p>
+        <div class="grid-container">
+          <div class="grid-image">
+            <img class="noborder" src="1_Images/Plan.png" alt="Planning Logo" style="height: 300px;">
+          </div>
+          <div class="grid-text">
+            <ul>
+              <li><strong>Statement of Goal(s):</strong> Identify what you are ultimately/primarily trying to do. As you do so, be open to breaking this goal down into smaller sub-goals and tasks.</li>
+              <li><strong>Statement of Needs:</strong> Identify what you'll need to achieve each of your goals and sub-goals. This would include noun-type objects (e.g., data files, image files, packages, resources) and verb-type objects (e.g., functions, actions,).</li>
+              <li><strong>List of Steps:</strong> Using your list of needs, you can bring the nouns and verbs together to create a list of steps/actions that will help you achieve each sub-goal and then your ultiamte/primary goal. Numbering the steps can help you organize your actions in terms of which goals rely on other goals.</li>
+              <li><strong>Make a sketch:</strong> (<em>Optional</em>) If appropriate to your goal(s), try making a sketch of what you currently imagine the end product looking like. The sketch does not need to be fancy as its purpose to help provide you with a visual reminder of what you're aiming for. This is useful with creating data visualizations, dashboards, or apps.</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          A great example of a plan is that of any recipe. A recipe will have a statement for what you're making (i.e., the goal), a list of ingredients (i.e., noun-type needs), and a series of instructions telling you what to do (i.e., the steps). Many recipes will also include pictures of either the final product and/or key instances of the process.
+        </p>
+        <h3>Key Questions to Ask Ourselves During the Planning Stage</h3>
+        <p>
+          Here are a few questions that we can ask ourselves to help us generate a plan.
+        </p>
+        <ul>
+          <li>What is your goal? What are you trying to do?</li>
+          <li>What data do you need? What data do you have?</li>
+          <li>Is the data tidy? Do you need to tidy or otherwise wrangle the data?</li>
+          <li><strong>In a Programming Context</strong></li>
+          <ul>
+            <li>What do you need in terms of nouns and verbs?</li>
+            <li>What do you have?</li>
+            <li>What steps do you need to work through so that the computer can help you reach your goal?</li>
+          </ul>
+          <li><strong>In a Data Visualizations Context</strong></li>
+          <ul>
+            <li>What steps do you need to carry out to create the visualization?</li>
+            <li>What kind of visualization do you want? What geometry (-ies) do you need?</li>
+            <li>Sketch what you're looking to create.</li>
+            <li>What goes into your Framework? Content? Labels?</li>
+            <li>How many layers do you need?</li>
+            <li>Do you need to use an interactive system to get started?</li>
+          </ul>
+        </ul>
+        <p>
+          Keep in mind that planning is not always linear. Sometimes you'll be writing out your steps and realize that you're going to need something that you didn't previously think of. Similarly, you might decide that you should create a new sub-goal so you can have sharper focus on a particular task.
+        </p>
+        <h2>Code</h2>
+        <div class="grid-container">
+          <div class="grid-text">
+            <p>
+              After we have made a plan, we can shift to enacting or following it. A good habit for us to adopt for programming and Statistics/Data Science contexts comes again from cooking: read the recipe (plan) several times, top to bottom. This helps you better internalize the plan, and make sure that you have everything you might need. In cooking/baking, this is known as <em>mise en place</em> or getting everthing together and put into place.
+            </p>
+            <p>
+              In programming and/or Statistics/Data Science contexts, we can swap out <em>mise en place</em> of ingredients for creating a <a href="https://neilhatfield.github.io/STAT184/plans_to_code.html" target="_blank" class="bodylinks">transition document</a> in our programming environment. These transition documents will help guide our work according to our plan.
+            </p>
+          </div>
+          <div class="grid-image">
+            <img class="noborder" src="1_Images/Code.png" alt="Coding Logo" style="height: 300px;">
+          </div>
+        </div>
+        <h3>Key Checks when Coding</h3>
+        <p>Here are few checks that we can do to make sure that we are in the strongest position possible as we transform our plans into code.</p>
+        <ul>
+          <li>Load necessary packages (install them as needed).</li>
+          <li>Download/obtain necessary data files; load them to the enivronment.</li>
+          <li>Tidy, wrangle/clean your data as needed.</li>
+          <li>Create a Trasition Document to scaffold your coding environment according to your current plan.</li>
+          <li><strong>In a Programming Context</strong></li>
+          <ul>
+            <li>Use comments to help you organize your code.</li>
+            <li>Use your plan to help you write your code in a logical way.</li>
+            <li>If you are creating custom/new functions that you are going to re-use, define these first.</li>
+            <li>Store outputs as necessary in appropriate [new] objects.</li>
+          </ul>
+          <li><strong>In a Data Visualization Context</strong></li>
+          <ul>
+            <li>Using an interactive tool? (e.g., <code>esquisse::esquisser</code>)</li>
+            <ul>
+              <li>Launch that tool.</li>
+              <li>Explore your data.</li>
+              <li>Copy and save the code.</li>
+            </ul>
+            <li>Plots/Graphics via <code>{ggplot2}</code></li>
+            <ul>
+              <li>Create the framework and specify the mappings.</li>
+              <li>Create content (geometries, glyphs, aesthetics).</li>
+              <li>Create the labels (axes, gridlines, scales, legends, titles).</li>
+            </ul>
+            <li>Tables</li>
+            <ul>
+              <li>Use the right package for the job.</li>
+              <ul>
+                <li><code>{janitor}</code> for frequency tables.</li>
+                <li><code>{knitr}</code> and <code>{kableExtra}</code> for summary tables.</li>
+                <li>If knitting to Word, use <code>{flextable}</code>.</li>
+              </ul>
+              <li>Identify what the rows and columns need to represent.</li>
+            </ul>
+          </ul>
+        </ul>
+        <p>
+          As you code, feel free to work in smaller chunks. This is where having sub-goals can come in handy. You don't have to code every single element before you test out your code. Keep in mind that in this Coding step, <strong><em>perfection is the enemy of progress</em></strong>. We do not need to have the best possible code from the start; rather, we need some initial code that we can improve upon in the next stage.
+        </p>
+        <h2>Improve</h2>
+        <p>
+          As we write code, we will start testing out our code. This helps us debug our code, check the reasonableness of the results, and assess the efficiency of our code.
+        </p>
+        <div class="grid-container">
+          <div class="grid-image">
+            <img class="noborder" src="1_Images/Improve.png" alt="Improving Logo" style="height: 300px;">
+          </div>
+          <div class="grid-text">
+            <p>
+              No matter how much experience you have, you should always carry out the Improve stage at least once. This is as true when you are first learning a new tool or when you've used the tool for decades. At it's core, the Improvement stage is about answering one core question: <strong>Did you achieve your stated goal(s)?</strong>
+            </p>
+            <ul>
+              <li><em>No?</em></li>
+              <ul>
+                <li>Identify what is going wrong; what the barriers might be.</li>
+                <li><strong>Plan</strong> your modifications, then <strong>Code</strong> updates.</li>
+              </ul>
+              <li><em>Yes?</em></li>
+              <ul>
+                <li>Were there any warning messages you ignored?</li>
+                <li>Are there any places where your code could be more efficient?</li>
+                <li><strong>Plan</strong> your modifications, then <strong>Code</strong> updates.</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <h3>Key Checks when Improving</h3>
+        <p>
+          As we work to improve our product (code, data visualizations, etc.), here are some key aspects to focus upon.
+        </p>
+        <ul>
+          <li>Do this step at least once.</li>
+          <li>Run your code. Look at the console for any warnings or error messages.</li>
+          <li>Did you achieve your stated goal?</li>
+          <li><strong>Plan</strong> your modifications, then <strong>code</strong>.</li>
+          <li>Focus on fundamental aspects, not aesthetics.</li>
+          <li><strong>In a Programming Context</strong></li>
+          <ul>
+            <li>Critically look at your code.</li>
+            <li>Are you using meaningful names?</li>
+            <li>Are there any places where you can be more efficient?</li>
+            <li>Keep track of your bugs and how you fixed them.</li>
+            <li>Incorporate comments to help you make sense of your code in the future.</li>
+          </ul>
+          <li><strong>In a Data Visualization Context</strong></li>
+          <ul>
+            <li>Critically examine your visualization in terms of EPTs, Tufte's Principles of Analytical Design, and Kosslyn's Eight-fold Way.</li>
+            <li>What improvements can you make to your visualization?</li>
+            <li>Do you need to add or remove layers to highlight the message you want to convey?</li>
+            <li>Do you need to adjust glyph sizes and or add additional aesthetics to make the graph more readable?</li>
+            <li>Do your readers make sense of the visualization (and the data) in a way that is consistent (but not necessarily identical to) what you intended?</li>
+            <li>Did you make a “duck”?</li>
+          </ul>
+        </ul>
+        <h2>Cycling Through Plan-Code-Improve</h2>
+        <p>
+          You'll notice that the first three stages of the PCIP system are connected in the digram with loop. This reflects that we should anticipate moving through Planning, Coding, and Improving several times. Iterating through this cycle is something that programmers, statisticians, data scientists, data analysts, and researchers do all of the time. Eventually, we reach a point where our work is good enough to move onto the last stage.
+        </p>
+        <h2>Polish</h2>
+        <p>
+          The final stage of the PCIP system is the Polishing stage. Here the idea is to take a few moments and make sure that our work is in the best shape that it can be in. While it might seem like Improving and Polishing are the same thing, they are different. The Improvement stage can lead to large changes in your final product; the Polishing stage will not. Improving is about making sure your code works (efficiently); polishing is about making sure your code is readable. Improving your data visualization focuses on ensuring that your message is conveyed while polishing focuses on artistic choices for your final visualization.
+        </p>
+        <div class="grid-container">
+          <div class="grid-text">
+            <p>
+              In the Polishing stage we will want to focus on critically appraising our work from two standpoints: how readable is our code and how appealing are our end products? You will want to think about <strong>how someone else</strong> might interpret your code and/or understand the data from your visualization.
+            </p>
+          </div>
+          <div class="grid-image">
+            <img class="noborder" src="1_Images/Polish.png" alt="Polishing Logo" style="height: 300px;">
+          </div>
+        </div>
+        <h3>Key Checks when Polishing</h3>
+        <p>
+          When polishing your work, here are some key things to focus on.
+        </p>
+        <ul>
+          <li>Only polish <strong><em>after</em></strong> you've gone through at least one round of Plan-Code-Improve.</li>
+          <li>Critically appraise your work.</li>
+          <li>How appealing is your work?</li>
+          <li>How easy of a time would someone (including your future self) have in understanding the work?</li>
+          <li>Be open to the possibility to have to go back to a new cycle of Plan-Code-Improve.</li>
+          <li><strong>In a Programming Context</strong></li>
+          <ul>
+            <li>Look through your code again.</li>
+            <li>Did you use meaningful names?</li>
+            <li>How readable is your code?</li>
+            <li>Is your code consistently formatted?</li>
+            <li>Did you follow a coding Style Guide?</li>
+            <li>Where might you add additional comments to improve the readability and re-usability of your code in the future?</li>
+          </ul>
+          <li><strong>In a Data Visualization Context</strong></li>
+          <ul>
+            <li>Check spelling and grammar of all parts of the visualization.</li>
+            <li>Double check that you have all key elements labeled.</li>
+            <li>Do you have a graph title or caption? Add one if not.</li>
+            <li>Did you set alt text for a plot/graph?</li>
+            <li>Check legibility. (E.g., Do you need to change font sizes?)</li>
+            <li>Do you have any vibrations, grids, or other chartjunk that need to be addressed/removed?</li>
+            <li>Are there any final improvements to be made to enhance the appeal of the plot in addition to the utility of the visualization?</li>
+          </ul>
+        </ul>
+      </div>
+      <div id="footer">
+        <div align="center">
+            <a href="http://stat.psu.edu"><img border="0" alt="Statistics at Penn State"
+                    src="1_Images/psu_mark.jpg" class="noborder" style="width: 318px; height: 85px;" /></a>
+            <br /> © 2025 Neil J. Hatfield
+            <br /> Artwork by Aaron Garcia
+            <br />
+        </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
