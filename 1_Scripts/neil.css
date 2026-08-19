@@ -441,6 +441,10 @@ th, td {
 	padding: 0px 15px;
 }
 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 dt {
 	font-size: 1.1rem;
 	font-weight: 700;
